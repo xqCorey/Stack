@@ -1,0 +1,203 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CoreysStack = Instance.new("ScreenGui")
+local Mainframe = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Target = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local KillButton = Instance.new("TextButton")
+local DestroyGui = Instance.new("TextButton")
+local RejoinButton = Instance.new("TextButton")
+local PlayerImage = Instance.new("ImageLabel")
+
+--Properties:
+
+CoreysStack.Name = "Coreys Stack"
+CoreysStack.Parent = game.CoreGui
+CoreysStack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = CoreysStack
+Mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainframe.BackgroundTransparency = 0.400
+Mainframe.Position = UDim2.new(0.404135376, 0, 0.379141122, 0)
+Mainframe.Size = UDim2.new(0, 410, 0, 231)
+Mainframe.Active = true
+Mainframe.Draggable = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient.Parent = Mainframe
+
+Target.Name = "Target"
+Target.Parent = Mainframe
+Target.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Target.BackgroundTransparency = 0.700
+Target.Position = UDim2.new(0.253658533, 0, 0.233766228, 0)
+Target.Size = UDim2.new(0, 268, 0, 50)
+Target.Font = Enum.Font.SourceSans
+Target.Text = ""
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 14.000
+
+UICorner.Parent = Target
+
+KillButton.Name = "KillButton"
+KillButton.Parent = Mainframe
+KillButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+KillButton.BackgroundTransparency = 0.450
+KillButton.Position = UDim2.new(0.253658533, 0, 0.519480526, 0)
+KillButton.Size = UDim2.new(0, 268, 0, 50)
+KillButton.Font = Enum.Font.Cartoon
+KillButton.Text = "Kill (right click to activate auto attack)"
+KillButton.TextColor3 = Color3.fromRGB(61, 61, 61)
+KillButton.TextSize = 19.000
+KillButton.TextStrokeColor3 = Color3.fromRGB(0, 170, 255)
+KillButton.TextStrokeTransparency = 0.000
+KillButton.TextWrapped = true
+
+DestroyGui.Name = "DestroyGui"
+DestroyGui.Parent = Mainframe
+DestroyGui.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+DestroyGui.BackgroundTransparency = 0.900
+DestroyGui.Position = UDim2.new(0.870731533, 0, 0, 0)
+DestroyGui.Size = UDim2.new(0, 52, 0, 40)
+DestroyGui.Font = Enum.Font.SourceSans
+DestroyGui.Text = "X"
+DestroyGui.TextColor3 = Color3.fromRGB(255, 0, 0)
+DestroyGui.TextSize = 25.000
+
+RejoinButton.Name = "RejoinButton"
+RejoinButton.Parent = Mainframe
+RejoinButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+RejoinButton.BackgroundTransparency = 0.450
+RejoinButton.Position = UDim2.new(0.253658533, 0, 0.792207778, 0)
+RejoinButton.Size = UDim2.new(0, 268, 0, 38)
+RejoinButton.Font = Enum.Font.Cartoon
+RejoinButton.Text = "-- Rejoin --"
+RejoinButton.TextColor3 = Color3.fromRGB(61, 61, 61)
+RejoinButton.TextSize = 26.000
+RejoinButton.TextStrokeColor3 = Color3.fromRGB(0, 170, 255)
+RejoinButton.TextStrokeTransparency = 0.000
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Mainframe
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.0565046966, 0, 0.172895819, 0)
+PlayerImage.Size = UDim2.new(0, 63, 0, 59)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+-- Scripts:
+
+local function NDCBU_fake_script() -- Target.LocalScript 
+	local script = Instance.new('LocalScript', Target)
+
+	Target = script.Parent
+	
+	Target.FocusLost:connect(function()
+		for i,v in pairs(game.Players:GetChildren()) do
+			if(string.sub(string.lower(v.Name),1,string.len(Target.Text))) == string.lower(Target.Text) then
+				Target.Text = v.Name
+			end
+		end
+	end)
+end
+coroutine.wrap(NDCBU_fake_script)()
+local function MVUJN_fake_script() -- KillButton.LocalScript 
+	local script = Instance.new('LocalScript', KillButton)
+
+	local button = script.Parent
+	local target = script.Parent.Parent.Target
+	_G.tog2 = true
+	_G.on = 1
+	
+	function Hitbox(target)
+	    local x = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.x--just general position
+        local y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y
+        local z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.z
+	    game:GetService("Workspace")[target.text].Head.Size = Vector3.new(100, 100, 100)
+	    game:GetService("Workspace")[target.text].Head.Position = Vector3.new(x,y,z)
+        game:GetService("Workspace")[target.text].Head.Transparency = 1
+	end
+	
+	function BringBack()
+		wait(2.5)
+		for i, v in pairs(game.Workspace.Storage:GetDescendants()) do-- gets the body velocity 
+			if v.name == "EnergySphere9" then
+				v.BV.Velocity = Vector3.new(0, -2200, 0)--Changes the velocity to make the snowball fire back down
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		while _G.tog2 == true do--loop
+			wait()
+			BringBack()-- calls the function to bring the snowballs down
+			Hitbox(Target)--calls the hitbox function
+		end
+	end)
+
+	button.MouseButton2Click:Connect(function()
+		while _G.on == 1 do
+	
+			wait()
+	
+			local args = {
+				[1] = {
+					[1] = "Skill_SpherePunch",
+					[2] = Vector3.new(-367,15735000,-10)
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		end
+	end)
+	
+	
+end
+coroutine.wrap(MVUJN_fake_script)()
+local function OROZR_fake_script() -- DestroyGui.LocalScript 
+	local script = Instance.new('LocalScript', DestroyGui)
+
+	Exit = script.Parent
+	a = script.Parent.Parent.Parent.Parent
+	
+	Exit.MouseButton1Click:Connect(function()
+		a:Destroy()
+	end)
+end
+coroutine.wrap(OROZR_fake_script)()
+local function UUSTWKP_fake_script() -- RejoinButton.LocalScript 
+	local script = Instance.new('LocalScript', RejoinButton)
+
+	local button2 = script.Parent
+	
+	button2.MouseButton1Click:Connect(function()
+		game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
+	end)
+end
+coroutine.wrap(UUSTWKP_fake_script)()
+local function HANA_fake_script() -- Mainframe.UiFrame 
+	local script = Instance.new('LocalScript', Mainframe)
+
+	local frame = script.Parent
+	
+	local player = game.Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumType = Enum.ThumbnailType.AvatarBust
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userId, thumType, thumSize)
+	
+	frame.PlayerImage.Image = content -- change the name of these acording
+	frame.PlayerName.Text = player.Name-- this aswell
+end
+coroutine.wrap(HANA_fake_script)()
