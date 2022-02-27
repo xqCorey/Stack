@@ -168,7 +168,7 @@ local function OROZR_fake_script() -- DestroyGui.LocalScript
 	local script = Instance.new('LocalScript', DestroyGui)
 
 	Exit = script.Parent
-	a = script.Parent.Parent.Parent.Parent
+	a = script.Parent.Parent.Parent
 	
 	Exit.MouseButton1Click:Connect(function()
 		a:Destroy()
