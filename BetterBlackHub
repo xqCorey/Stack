@@ -1,0 +1,5779 @@
+-- Gui to Lua
+
+
+-- Version: 3.2
+
+
+
+-- Instances:
+
+
+
+local OperationV1Part2 = Instance.new("ScreenGui")
+
+
+local RemadeBlackHub = Instance.new("Frame")
+
+
+local ESPButton = Instance.new("TextButton")
+
+
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+
+local AutoFarm = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+
+
+local Farm = Instance.new("Frame")
+
+
+local Fist = Instance.new("TextButton")
+
+
+local UICorner = Instance.new("UICorner")
+
+
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+
+
+local Body = Instance.new("TextButton")
+
+
+local UICorner_2 = Instance.new("UICorner")
+
+
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+
+
+local Psychic = Instance.new("TextButton")
+
+
+local UICorner_3 = Instance.new("UICorner")
+
+
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+
+
+local Speed = Instance.new("TextButton")
+
+
+local UICorner_4 = Instance.new("UICorner")
+
+
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+
+
+local Jump = Instance.new("TextButton")
+
+
+local UICorner_5 = Instance.new("UICorner")
+
+
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+
+
+local AutoFarmTitle = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+
+
+local Close = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+
+
+local Minimise = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+
+
+local OnDeathReturn = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+
+
+local TargetBox = Instance.new("TextBox")
+
+
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+
+
+local Teleports = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+
+
+local TeleportsFrame = Instance.new("Frame")
+
+
+local TeleportsTitle = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+
+
+local Fist_2 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+
+
+local SafeZone = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+
+
+local Rock = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+
+
+local Crystal = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+
+
+local BlueStar = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+
+
+local GreenStar = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+
+
+local RedStar = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+
+
+local Fist_3 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+
+
+local CityPort100 = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+
+
+local CityPort10k = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+
+
+local Iceberg = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+
+
+local Volcano = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
+
+
+local GreenPool = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
+
+
+local Fist_4 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
+
+
+local Tornado = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
+
+
+local GreenFlame = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
+
+
+local RedPool = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
+
+
+local ZenMil = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
+
+
+local Bridge = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint")
+
+
+local ZenBil = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
+
+
+local Waterfall = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint")
+
+
+local Stats = Instance.new("Frame")
+
+
+local Health = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint")
+
+
+local Fist_5 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint")
+
+
+local Body_2 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint")
+
+
+local Psychic_2 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint")
+
+
+local Speed_2 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_40 = Instance.new("UITextSizeConstraint")
+
+
+local Jump_2 = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayBt = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_42 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayFs = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_43 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayHp = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_44 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayPsy = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_45 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayMs = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_46 = Instance.new("UITextSizeConstraint")
+
+
+local DisplayJp = Instance.new("TextLabel")
+
+
+local UITextSizeConstraint_47 = Instance.new("UITextSizeConstraint")
+
+
+local SplitTp = Instance.new("TextButton")
+
+
+local UITextSizeConstraint_48 = Instance.new("UITextSizeConstraint")
+
+
+
+--Properties:
+
+
+
+OperationV1Part2.Name = "Operation-V1-Part2"
+
+
+OperationV1Part2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+OperationV1Part2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+RemadeBlackHub.Name = "RemadeBlackHub"
+
+
+RemadeBlackHub.Parent = OperationV1Part2
+
+
+RemadeBlackHub.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+
+
+RemadeBlackHub.BorderSizePixel = 0
+
+
+RemadeBlackHub.Position = UDim2.new(0.22895138, 0, 0, 0)
+
+
+RemadeBlackHub.Size = UDim2.new(0.541348755, 0, 0.0304093566, 0)
+
+
+RemadeBlackHub.ZIndex = 5
+
+
+
+ESPButton.Name = "ESPButton"
+
+
+ESPButton.Parent = RemadeBlackHub
+
+
+ESPButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+ESPButton.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+ESPButton.BorderSizePixel = 4
+
+
+ESPButton.Position = UDim2.new(0.207709715, 0, 0, 0)
+
+
+ESPButton.Size = UDim2.new(0.0928961784, 0, 1, 0)
+
+
+ESPButton.Font = Enum.Font.SourceSans
+
+
+ESPButton.Text = "ESP"
+
+
+ESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ESPButton.TextScaled = true
+
+
+ESPButton.TextSize = 18.000
+
+
+ESPButton.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+ESPButton.TextStrokeTransparency = 0.000
+
+
+ESPButton.TextWrapped = true
+
+
+
+UITextSizeConstraint.Parent = ESPButton
+
+
+UITextSizeConstraint.MaxTextSize = 18
+
+
+
+AutoFarm.Name = "AutoFarm"
+
+
+AutoFarm.Parent = RemadeBlackHub
+
+
+AutoFarm.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+AutoFarm.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+AutoFarm.BorderSizePixel = 4
+
+
+AutoFarm.Position = UDim2.new(0.0730083287, 0, 0, 0)
+
+
+AutoFarm.Size = UDim2.new(0.135519132, 0, 1, 0)
+
+
+AutoFarm.Font = Enum.Font.SourceSans
+
+
+AutoFarm.Text = "Auto Farm"
+
+
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+AutoFarm.TextScaled = true
+
+
+AutoFarm.TextSize = 18.000
+
+
+AutoFarm.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+AutoFarm.TextStrokeTransparency = 0.000
+
+
+AutoFarm.TextWrapped = true
+
+
+
+UITextSizeConstraint_2.Parent = AutoFarm
+
+
+UITextSizeConstraint_2.MaxTextSize = 18
+
+
+
+Farm.Name = "Farm"
+
+
+Farm.Parent = RemadeBlackHub
+
+
+Farm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Farm.BackgroundTransparency = 0.400
+
+
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Farm.BorderSizePixel = 4
+
+
+Farm.Position = UDim2.new(0.0428751819, 0, 1.26923072, 0)
+
+
+Farm.Size = UDim2.new(0.214207649, 0, 6.26923084, 0)
+
+
+Farm.Visible = false
+
+
+
+Fist.Name = "Fist"
+
+
+Fist.Parent = Farm
+
+
+Fist.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+Fist.BackgroundTransparency = 0.550
+
+
+Fist.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Fist.Position = UDim2.new(0, 0, 0.119214721, 0)
+
+
+Fist.Size = UDim2.new(1, 0, 0.171779141, 0)
+
+
+Fist.Font = Enum.Font.Cartoon
+
+
+Fist.Text = "Fist Auto Farm"
+
+
+Fist.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Fist.TextScaled = true
+
+
+Fist.TextSize = 15.000
+
+
+Fist.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Fist.TextStrokeTransparency = 0.000
+
+
+Fist.TextWrapped = true
+
+
+
+UICorner.Parent = Fist
+
+
+
+UITextSizeConstraint_3.Parent = Fist
+
+
+UITextSizeConstraint_3.MaxTextSize = 15
+
+
+
+Body.Name = "Body"
+
+
+Body.Parent = Farm
+
+
+Body.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+Body.BackgroundTransparency = 0.500
+
+
+Body.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Body.Position = UDim2.new(0, 0, 0.297781199, 0)
+
+
+Body.Size = UDim2.new(1, 0, 0.171779141, 0)
+
+
+Body.Font = Enum.Font.Cartoon
+
+
+Body.Text = "Body Toughness Auto Farm"
+
+
+Body.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Body.TextScaled = true
+
+
+Body.TextSize = 15.000
+
+
+Body.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Body.TextStrokeTransparency = 0.000
+
+
+Body.TextWrapped = true
+
+
+
+UICorner_2.Parent = Body
+
+
+
+UITextSizeConstraint_4.Parent = Body
+
+
+UITextSizeConstraint_4.MaxTextSize = 15
+
+
+
+Psychic.Name = "Psychic"
+
+
+Psychic.Parent = Farm
+
+
+Psychic.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+Psychic.BackgroundTransparency = 0.550
+
+
+Psychic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Psychic.Position = UDim2.new(0, 0, 0.473614663, 0)
+
+
+Psychic.Size = UDim2.new(1, 0, 0.171779141, 0)
+
+
+Psychic.Font = Enum.Font.Cartoon
+
+
+Psychic.Text = "Psychic Auto Farm"
+
+
+Psychic.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Psychic.TextScaled = true
+
+
+Psychic.TextSize = 15.000
+
+
+Psychic.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Psychic.TextStrokeTransparency = 0.000
+
+
+Psychic.TextWrapped = true
+
+
+
+UICorner_3.Parent = Psychic
+
+
+
+UITextSizeConstraint_5.Parent = Psychic
+
+
+UITextSizeConstraint_5.MaxTextSize = 15
+
+
+
+Speed.Name = "Speed"
+
+
+Speed.Parent = Farm
+
+
+Speed.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+Speed.BackgroundTransparency = 0.550
+
+
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Speed.Position = UDim2.new(0, 0, 0.647822738, 0)
+
+
+Speed.Size = UDim2.new(1, 0, 0.171779141, 0)
+
+
+Speed.Font = Enum.Font.Cartoon
+
+
+Speed.Text = "Speed Auto Farm"
+
+
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Speed.TextScaled = true
+
+
+Speed.TextSize = 15.000
+
+
+Speed.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Speed.TextStrokeTransparency = 0.000
+
+
+Speed.TextWrapped = true
+
+
+
+UICorner_4.Parent = Speed
+
+
+
+UITextSizeConstraint_6.Parent = Speed
+
+
+UITextSizeConstraint_6.MaxTextSize = 15
+
+
+
+Jump.Name = "Jump"
+
+
+Jump.Parent = Farm
+
+
+Jump.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+Jump.BackgroundTransparency = 0.550
+
+
+Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Jump.Position = UDim2.new(0, 0, 0.827089071, 0)
+
+
+Jump.Size = UDim2.new(1, 0, 0.171779141, 0)
+
+
+Jump.Font = Enum.Font.Cartoon
+
+
+Jump.Text = "Jump Auto Farm"
+
+
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Jump.TextScaled = true
+
+
+Jump.TextSize = 15.000
+
+
+Jump.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Jump.TextStrokeTransparency = 0.000
+
+
+Jump.TextWrapped = true
+
+
+
+UICorner_5.Parent = Jump
+
+
+
+UITextSizeConstraint_7.Parent = Jump
+
+
+UITextSizeConstraint_7.MaxTextSize = 15
+
+
+
+AutoFarmTitle.Name = "AutoFarmTitle"
+
+
+AutoFarmTitle.Parent = Farm
+
+
+AutoFarmTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AutoFarmTitle.BackgroundTransparency = 0.500
+
+
+AutoFarmTitle.Size = UDim2.new(1, 0, 0.122699387, 0)
+
+
+AutoFarmTitle.Font = Enum.Font.SourceSansItalic
+
+
+AutoFarmTitle.Text = "--AutoFarmStats--"
+
+
+AutoFarmTitle.TextColor3 = Color3.fromRGB(158, 218, 255)
+
+
+AutoFarmTitle.TextScaled = true
+
+
+AutoFarmTitle.TextSize = 18.000
+
+
+AutoFarmTitle.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+
+
+AutoFarmTitle.TextStrokeTransparency = 0.000
+
+
+AutoFarmTitle.TextWrapped = true
+
+
+
+UITextSizeConstraint_8.Parent = AutoFarmTitle
+
+
+UITextSizeConstraint_8.MaxTextSize = 18
+
+
+
+Close.Name = "Close"
+
+
+Close.Parent = RemadeBlackHub
+
+
+Close.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+Close.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+Close.BorderSizePixel = 4
+
+
+Close.Size = UDim2.new(0.0371584706, 0, 1, 0)
+
+
+Close.Font = Enum.Font.SourceSans
+
+
+Close.Text = "x"
+
+
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Close.TextScaled = true
+
+
+Close.TextSize = 20.000
+
+
+Close.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+Close.TextStrokeTransparency = 0.000
+
+
+Close.TextWrapped = true
+
+
+
+UITextSizeConstraint_9.Parent = Close
+
+
+UITextSizeConstraint_9.MaxTextSize = 20
+
+
+
+Minimise.Name = "Minimise"
+
+
+Minimise.Parent = RemadeBlackHub
+
+
+Minimise.BackgroundColor3 = Color3.fromRGB(44, 44, 45)
+
+
+Minimise.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+Minimise.BorderSizePixel = 4
+
+
+Minimise.Position = UDim2.new(0.0363177806, 0, 0, 0)
+
+
+Minimise.Size = UDim2.new(0.0371584706, 0, 1, 0)
+
+
+Minimise.Font = Enum.Font.SourceSans
+
+
+Minimise.Text = "-"
+
+
+Minimise.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Minimise.TextScaled = true
+
+
+Minimise.TextSize = 32.000
+
+
+Minimise.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+Minimise.TextStrokeTransparency = 0.000
+
+
+Minimise.TextWrapped = true
+
+
+
+UITextSizeConstraint_10.Parent = Minimise
+
+
+UITextSizeConstraint_10.MaxTextSize = 32
+
+
+
+OnDeathReturn.Name = "OnDeathReturn"
+
+
+OnDeathReturn.Parent = RemadeBlackHub
+
+
+OnDeathReturn.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+OnDeathReturn.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+OnDeathReturn.BorderSizePixel = 4
+
+
+OnDeathReturn.Position = UDim2.new(0.448494464, 0, 0, 0)
+
+
+OnDeathReturn.Size = UDim2.new(0.184699461, 0, 1, 0)
+
+
+OnDeathReturn.Font = Enum.Font.SourceSans
+
+
+OnDeathReturn.Text = "OnDeathReturn: OFF"
+
+
+OnDeathReturn.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+OnDeathReturn.TextScaled = true
+
+
+OnDeathReturn.TextSize = 18.000
+
+
+OnDeathReturn.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+OnDeathReturn.TextStrokeTransparency = 0.000
+
+
+OnDeathReturn.TextWrapped = true
+
+
+
+UITextSizeConstraint_11.Parent = OnDeathReturn
+
+
+UITextSizeConstraint_11.MaxTextSize = 18
+
+
+
+TargetBox.Name = "TargetBox"
+
+
+TargetBox.Parent = RemadeBlackHub
+
+
+TargetBox.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+TargetBox.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+TargetBox.BorderSizePixel = 4
+
+
+TargetBox.Position = UDim2.new(0.781273723, 0, 0, 0)
+
+
+TargetBox.Size = UDim2.new(0.218579233, 0, 1, 0)
+
+
+TargetBox.Font = Enum.Font.SourceSans
+
+
+TargetBox.PlaceholderColor3 = Color3.fromRGB(193, 193, 193)
+
+
+TargetBox.PlaceholderText = "-- Target Name --"
+
+
+TargetBox.Text = ""
+
+
+TargetBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TargetBox.TextScaled = true
+
+
+TargetBox.TextSize = 20.000
+
+
+TargetBox.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+TargetBox.TextStrokeTransparency = 0.000
+
+
+TargetBox.TextWrapped = true
+
+
+
+UITextSizeConstraint_12.Parent = TargetBox
+
+
+UITextSizeConstraint_12.MaxTextSize = 20
+
+
+
+Teleports.Name = "Teleports"
+
+
+Teleports.Parent = RemadeBlackHub
+
+
+Teleports.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+Teleports.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+Teleports.BorderSizePixel = 4
+
+
+Teleports.Position = UDim2.new(0.299773216, 0, 0, 0)
+
+
+Teleports.Size = UDim2.new(0.149726778, 0, 1, 0)
+
+
+Teleports.Font = Enum.Font.SourceSans
+
+
+Teleports.Text = "Teleports"
+
+
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Teleports.TextScaled = true
+
+
+Teleports.TextSize = 18.000
+
+
+Teleports.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+Teleports.TextStrokeTransparency = 0.000
+
+
+Teleports.TextWrapped = true
+
+
+
+UITextSizeConstraint_13.Parent = Teleports
+
+
+UITextSizeConstraint_13.MaxTextSize = 18
+
+
+
+TeleportsFrame.Name = "TeleportsFrame"
+
+
+TeleportsFrame.Parent = RemadeBlackHub
+
+
+TeleportsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+TeleportsFrame.BackgroundTransparency = 0.400
+
+
+TeleportsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+TeleportsFrame.BorderSizePixel = 4
+
+
+TeleportsFrame.Position = UDim2.new(0.237586483, 0, 1.30769229, 0)
+
+
+TeleportsFrame.Size = UDim2.new(0.353005469, 0, 14.9615383, 0)
+
+
+TeleportsFrame.Visible = false
+
+
+
+TeleportsTitle.Name = "TeleportsTitle"
+
+
+TeleportsTitle.Parent = TeleportsFrame
+
+
+TeleportsTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+TeleportsTitle.BackgroundTransparency = 0.500
+
+
+TeleportsTitle.Size = UDim2.new(1, 0, 0.0514138825, 0)
+
+
+TeleportsTitle.Font = Enum.Font.DenkOne
+
+
+TeleportsTitle.Text = "--Teleports--"
+
+
+TeleportsTitle.TextColor3 = Color3.fromRGB(158, 218, 255)
+
+
+TeleportsTitle.TextScaled = true
+
+
+TeleportsTitle.TextSize = 18.000
+
+
+TeleportsTitle.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+
+
+TeleportsTitle.TextStrokeTransparency = 0.000
+
+
+TeleportsTitle.TextWrapped = true
+
+
+
+UITextSizeConstraint_14.Parent = TeleportsTitle
+
+
+UITextSizeConstraint_14.MaxTextSize = 18
+
+
+
+Fist_2.Name = "Fist"
+
+
+Fist_2.Parent = TeleportsFrame
+
+
+Fist_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Fist_2.BackgroundTransparency = 0.500
+
+
+Fist_2.Position = UDim2.new(0, 0, 0.132030845, 0)
+
+
+Fist_2.Size = UDim2.new(1, 0, 0.0668380484, 0)
+
+
+Fist_2.Font = Enum.Font.DenkOne
+
+
+Fist_2.Text = "--Fist--"
+
+
+Fist_2.TextColor3 = Color3.fromRGB(224, 161, 255)
+
+
+Fist_2.TextScaled = true
+
+
+Fist_2.TextSize = 18.000
+
+
+Fist_2.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Fist_2.TextStrokeTransparency = 0.000
+
+
+Fist_2.TextWrapped = true
+
+
+
+UITextSizeConstraint_15.Parent = Fist_2
+
+
+UITextSizeConstraint_15.MaxTextSize = 18
+
+
+
+SafeZone.Name = "SafeZone"
+
+
+SafeZone.Parent = TeleportsFrame
+
+
+SafeZone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+SafeZone.BackgroundTransparency = 0.700
+
+
+SafeZone.Position = UDim2.new(0, 0, 0.0565552711, 0)
+
+
+SafeZone.Size = UDim2.new(1, 0, 0.0719794333, 0)
+
+
+SafeZone.Font = Enum.Font.Nunito
+
+
+SafeZone.Text = "SafeZone"
+
+
+SafeZone.TextColor3 = Color3.fromRGB(255, 221, 196)
+
+
+SafeZone.TextScaled = true
+
+
+SafeZone.TextSize = 18.000
+
+
+SafeZone.TextStrokeColor3 = Color3.fromRGB(255, 128, 0)
+
+
+SafeZone.TextStrokeTransparency = 0.000
+
+
+SafeZone.TextWrapped = true
+
+
+
+UITextSizeConstraint_16.Parent = SafeZone
+
+
+UITextSizeConstraint_16.MaxTextSize = 18
+
+
+
+Rock.Name = "Rock"
+
+
+Rock.Parent = TeleportsFrame
+
+
+Rock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Rock.BackgroundTransparency = 0.700
+
+
+Rock.Position = UDim2.new(0, 0, 0.200645015, 0)
+
+
+Rock.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Rock.Font = Enum.Font.Nunito
+
+
+Rock.Text = "Rock | 0"
+
+
+Rock.TextColor3 = Color3.fromRGB(222, 188, 255)
+
+
+Rock.TextScaled = true
+
+
+Rock.TextSize = 18.000
+
+
+Rock.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Rock.TextStrokeTransparency = 0.000
+
+
+Rock.TextWrapped = true
+
+
+
+UITextSizeConstraint_17.Parent = Rock
+
+
+UITextSizeConstraint_17.MaxTextSize = 18
+
+
+
+Crystal.Name = "Crystal"
+
+
+Crystal.Parent = TeleportsFrame
+
+
+Crystal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Crystal.BackgroundTransparency = 0.700
+
+
+Crystal.Position = UDim2.new(0.51393187, 0, 0.200645015, 0)
+
+
+Crystal.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Crystal.Font = Enum.Font.Nunito
+
+
+Crystal.Text = "Crystal | 0"
+
+
+Crystal.TextColor3 = Color3.fromRGB(222, 188, 255)
+
+
+Crystal.TextScaled = true
+
+
+Crystal.TextSize = 18.000
+
+
+Crystal.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+Crystal.TextStrokeTransparency = 0.000
+
+
+Crystal.TextWrapped = true
+
+
+
+UITextSizeConstraint_18.Parent = Crystal
+
+
+UITextSizeConstraint_18.MaxTextSize = 18
+
+
+
+BlueStar.Name = "BlueStar"
+
+
+BlueStar.Parent = TeleportsFrame
+
+
+BlueStar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+BlueStar.BackgroundTransparency = 0.700
+
+
+BlueStar.Position = UDim2.new(0, 0, 0.272689849, 0)
+
+
+BlueStar.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+BlueStar.Font = Enum.Font.Nunito
+
+
+BlueStar.Text = "Blue star | 1B+"
+
+
+BlueStar.TextColor3 = Color3.fromRGB(222, 188, 255)
+
+
+BlueStar.TextScaled = true
+
+
+BlueStar.TextSize = 18.000
+
+
+BlueStar.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+BlueStar.TextStrokeTransparency = 0.000
+
+
+BlueStar.TextWrapped = true
+
+
+
+UITextSizeConstraint_19.Parent = BlueStar
+
+
+UITextSizeConstraint_19.MaxTextSize = 18
+
+
+
+GreenStar.Name = "GreenStar"
+
+
+GreenStar.Parent = TeleportsFrame
+
+
+GreenStar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+GreenStar.BackgroundTransparency = 0.700
+
+
+GreenStar.Position = UDim2.new(0.51393187, 0, 0.271829873, 0)
+
+
+GreenStar.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+GreenStar.Font = Enum.Font.Nunito
+
+
+GreenStar.Text = "Green star | 100B+"
+
+
+GreenStar.TextColor3 = Color3.fromRGB(222, 188, 255)
+
+
+GreenStar.TextScaled = true
+
+
+GreenStar.TextSize = 18.000
+
+
+GreenStar.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+GreenStar.TextStrokeTransparency = 0.000
+
+
+GreenStar.TextWrapped = true
+
+
+
+UITextSizeConstraint_20.Parent = GreenStar
+
+
+UITextSizeConstraint_20.MaxTextSize = 18
+
+
+
+RedStar.Name = "RedStar"
+
+
+RedStar.Parent = TeleportsFrame
+
+
+RedStar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+RedStar.BackgroundTransparency = 0.700
+
+
+RedStar.Position = UDim2.new(0, 0, 0.344734758, 0)
+
+
+RedStar.Size = UDim2.new(1, 0, 0.0719794333, 0)
+
+
+RedStar.Font = Enum.Font.Nunito
+
+
+RedStar.Text = "Red star 10T+"
+
+
+RedStar.TextColor3 = Color3.fromRGB(222, 188, 255)
+
+
+RedStar.TextScaled = true
+
+
+RedStar.TextSize = 18.000
+
+
+RedStar.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+
+
+RedStar.TextStrokeTransparency = 0.000
+
+
+RedStar.TextWrapped = true
+
+
+
+UITextSizeConstraint_21.Parent = RedStar
+
+
+UITextSizeConstraint_21.MaxTextSize = 18
+
+
+
+Fist_3.Name = "Fist"
+
+
+Fist_3.Parent = TeleportsFrame
+
+
+Fist_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Fist_3.BackgroundTransparency = 0.500
+
+
+Fist_3.Position = UDim2.new(0, 0, 0.416779637, 0)
+
+
+Fist_3.Size = UDim2.new(1, 0, 0.0668380484, 0)
+
+
+Fist_3.Font = Enum.Font.DenkOne
+
+
+Fist_3.Text = "--Body Toughness-"
+
+
+Fist_3.TextColor3 = Color3.fromRGB(158, 218, 255)
+
+
+Fist_3.TextScaled = true
+
+
+Fist_3.TextSize = 18.000
+
+
+Fist_3.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+Fist_3.TextStrokeTransparency = 0.000
+
+
+Fist_3.TextWrapped = true
+
+
+
+UITextSizeConstraint_22.Parent = Fist_3
+
+
+UITextSizeConstraint_22.MaxTextSize = 18
+
+
+
+CityPort100.Name = "CityPort100"
+
+
+CityPort100.Parent = TeleportsFrame
+
+
+CityPort100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+CityPort100.BackgroundTransparency = 0.700
+
+
+CityPort100.Position = UDim2.new(0, 0, 0.498256624, 0)
+
+
+CityPort100.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+CityPort100.Font = Enum.Font.Nunito
+
+
+CityPort100.Text = "CityPort Ice | 100+"
+
+
+CityPort100.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+CityPort100.TextScaled = true
+
+
+CityPort100.TextSize = 18.000
+
+
+CityPort100.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+CityPort100.TextStrokeTransparency = 0.000
+
+
+CityPort100.TextWrapped = true
+
+
+
+UITextSizeConstraint_23.Parent = CityPort100
+
+
+UITextSizeConstraint_23.MaxTextSize = 18
+
+
+
+CityPort10k.Name = "CityPort10k"
+
+
+CityPort10k.Parent = TeleportsFrame
+
+
+CityPort10k.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+CityPort10k.BackgroundTransparency = 0.700
+
+
+CityPort10k.Position = UDim2.new(0.51393187, 0, 0.4991166, 0)
+
+
+CityPort10k.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+CityPort10k.Font = Enum.Font.Nunito
+
+
+CityPort10k.Text = "CityPort Fire | 10k+"
+
+
+CityPort10k.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+CityPort10k.TextScaled = true
+
+
+CityPort10k.TextSize = 18.000
+
+
+CityPort10k.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+CityPort10k.TextStrokeTransparency = 0.000
+
+
+CityPort10k.TextWrapped = true
+
+
+
+UITextSizeConstraint_24.Parent = CityPort10k
+
+
+UITextSizeConstraint_24.MaxTextSize = 18
+
+
+
+Iceberg.Name = "Iceberg"
+
+
+Iceberg.Parent = TeleportsFrame
+
+
+Iceberg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Iceberg.BackgroundTransparency = 0.700
+
+
+Iceberg.Position = UDim2.new(0, 0, 0.571161509, 0)
+
+
+Iceberg.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Iceberg.Font = Enum.Font.Nunito
+
+
+Iceberg.Text = "Iceberg | 100K+"
+
+
+Iceberg.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+Iceberg.TextScaled = true
+
+
+Iceberg.TextSize = 18.000
+
+
+Iceberg.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+Iceberg.TextStrokeTransparency = 0.000
+
+
+Iceberg.TextWrapped = true
+
+
+
+UITextSizeConstraint_25.Parent = Iceberg
+
+
+UITextSizeConstraint_25.MaxTextSize = 18
+
+
+
+Volcano.Name = "Volcano"
+
+
+Volcano.Parent = TeleportsFrame
+
+
+Volcano.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Volcano.BackgroundTransparency = 0.700
+
+
+Volcano.Position = UDim2.new(0, 0, 0.643206358, 0)
+
+
+Volcano.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Volcano.Font = Enum.Font.Nunito
+
+
+Volcano.Text = "Volcano | 10M+"
+
+
+Volcano.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+Volcano.TextScaled = true
+
+
+Volcano.TextSize = 18.000
+
+
+Volcano.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+Volcano.TextStrokeTransparency = 0.000
+
+
+Volcano.TextWrapped = true
+
+
+
+UITextSizeConstraint_26.Parent = Volcano
+
+
+UITextSizeConstraint_26.MaxTextSize = 18
+
+
+
+GreenPool.Name = "GreenPool"
+
+
+GreenPool.Parent = TeleportsFrame
+
+
+GreenPool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+GreenPool.BackgroundTransparency = 0.700
+
+
+GreenPool.Position = UDim2.new(0, 0, 0.715251207, 0)
+
+
+GreenPool.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+GreenPool.Font = Enum.Font.Nunito
+
+
+GreenPool.Text = "Green Pool | 100B+"
+
+
+GreenPool.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+GreenPool.TextScaled = true
+
+
+GreenPool.TextSize = 18.000
+
+
+GreenPool.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+GreenPool.TextStrokeTransparency = 0.000
+
+
+GreenPool.TextWrapped = true
+
+
+
+UITextSizeConstraint_27.Parent = GreenPool
+
+
+UITextSizeConstraint_27.MaxTextSize = 18
+
+
+
+Fist_4.Name = "Fist"
+
+
+Fist_4.Parent = TeleportsFrame
+
+
+Fist_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Fist_4.BackgroundTransparency = 0.500
+
+
+Fist_4.Position = UDim2.new(0, 0, 0.787296116, 0)
+
+
+Fist_4.Size = UDim2.new(1, 0, 0.0668380484, 0)
+
+
+Fist_4.Font = Enum.Font.DenkOne
+
+
+Fist_4.Text = "--Psychic--"
+
+
+Fist_4.TextColor3 = Color3.fromRGB(255, 174, 254)
+
+
+Fist_4.TextScaled = true
+
+
+Fist_4.TextSize = 18.000
+
+
+Fist_4.TextStrokeColor3 = Color3.fromRGB(255, 0, 200)
+
+
+Fist_4.TextStrokeTransparency = 0.000
+
+
+Fist_4.TextWrapped = true
+
+
+
+UITextSizeConstraint_28.Parent = Fist_4
+
+
+UITextSizeConstraint_28.MaxTextSize = 18
+
+
+
+Tornado.Name = "Tornado"
+
+
+Tornado.Parent = TeleportsFrame
+
+
+Tornado.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Tornado.BackgroundTransparency = 0.700
+
+
+Tornado.Position = UDim2.new(0.51393187, 0, 0.570310771, 0)
+
+
+Tornado.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Tornado.Font = Enum.Font.Nunito
+
+
+Tornado.Text = "Tornado | 1M+"
+
+
+Tornado.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+Tornado.TextScaled = true
+
+
+Tornado.TextSize = 18.000
+
+
+Tornado.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+Tornado.TextStrokeTransparency = 0.000
+
+
+Tornado.TextWrapped = true
+
+
+
+UITextSizeConstraint_29.Parent = Tornado
+
+
+UITextSizeConstraint_29.MaxTextSize = 18
+
+
+
+GreenFlame.Name = "GreenFlame"
+
+
+GreenFlame.Parent = TeleportsFrame
+
+
+GreenFlame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+GreenFlame.BackgroundTransparency = 0.700
+
+
+GreenFlame.Position = UDim2.new(0.51393187, 0, 0.643206298, 0)
+
+
+GreenFlame.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+GreenFlame.Font = Enum.Font.Nunito
+
+
+GreenFlame.Text = "Green Flames | 1B+"
+
+
+GreenFlame.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+GreenFlame.TextScaled = true
+
+
+GreenFlame.TextSize = 18.000
+
+
+GreenFlame.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+GreenFlame.TextStrokeTransparency = 0.000
+
+
+GreenFlame.TextWrapped = true
+
+
+
+UITextSizeConstraint_30.Parent = GreenFlame
+
+
+UITextSizeConstraint_30.MaxTextSize = 18
+
+
+
+RedPool.Name = "RedPool"
+
+
+RedPool.Parent = TeleportsFrame
+
+
+RedPool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+RedPool.BackgroundTransparency = 0.700
+
+
+RedPool.Position = UDim2.new(0.51393187, 0, 0.715251207, 0)
+
+
+RedPool.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+RedPool.Font = Enum.Font.Nunito
+
+
+RedPool.Text = "Red Pool | 10T+"
+
+
+RedPool.TextColor3 = Color3.fromRGB(188, 230, 255)
+
+
+RedPool.TextScaled = true
+
+
+RedPool.TextSize = 18.000
+
+
+RedPool.TextStrokeColor3 = Color3.fromRGB(0, 153, 255)
+
+
+RedPool.TextStrokeTransparency = 0.000
+
+
+RedPool.TextWrapped = true
+
+
+
+UITextSizeConstraint_31.Parent = RedPool
+
+
+UITextSizeConstraint_31.MaxTextSize = 18
+
+
+
+ZenMil.Name = "ZenMil"
+
+
+ZenMil.Parent = TeleportsFrame
+
+
+ZenMil.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ZenMil.BackgroundTransparency = 0.700
+
+
+ZenMil.Position = UDim2.new(0, 0, 0.855910301, 0)
+
+
+ZenMil.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+ZenMil.Font = Enum.Font.Nunito
+
+
+ZenMil.Text = "Zen | 1M+"
+
+
+ZenMil.TextColor3 = Color3.fromRGB(255, 190, 245)
+
+
+ZenMil.TextScaled = true
+
+
+ZenMil.TextSize = 18.000
+
+
+ZenMil.TextStrokeColor3 = Color3.fromRGB(255, 0, 200)
+
+
+ZenMil.TextStrokeTransparency = 0.000
+
+
+ZenMil.TextWrapped = true
+
+
+
+UITextSizeConstraint_32.Parent = ZenMil
+
+
+UITextSizeConstraint_32.MaxTextSize = 18
+
+
+
+Bridge.Name = "Bridge"
+
+
+Bridge.Parent = TeleportsFrame
+
+
+Bridge.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Bridge.BackgroundTransparency = 0.700
+
+
+Bridge.Position = UDim2.new(0, 0, 0.927955151, 0)
+
+
+Bridge.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Bridge.Font = Enum.Font.Nunito
+
+
+Bridge.Text = "Bridge | 1T+"
+
+
+Bridge.TextColor3 = Color3.fromRGB(255, 190, 245)
+
+
+Bridge.TextScaled = true
+
+
+Bridge.TextSize = 18.000
+
+
+Bridge.TextStrokeColor3 = Color3.fromRGB(255, 0, 200)
+
+
+Bridge.TextStrokeTransparency = 0.000
+
+
+Bridge.TextWrapped = true
+
+
+
+UITextSizeConstraint_33.Parent = Bridge
+
+
+UITextSizeConstraint_33.MaxTextSize = 18
+
+
+
+ZenBil.Name = "ZenBil"
+
+
+ZenBil.Parent = TeleportsFrame
+
+
+ZenBil.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ZenBil.BackgroundTransparency = 0.700
+
+
+ZenBil.Position = UDim2.new(0.51393187, 0, 0.855910301, 0)
+
+
+ZenBil.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+ZenBil.Font = Enum.Font.Nunito
+
+
+ZenBil.Text = "Zen | 1B+"
+
+
+ZenBil.TextColor3 = Color3.fromRGB(255, 190, 245)
+
+
+ZenBil.TextScaled = true
+
+
+ZenBil.TextSize = 18.000
+
+
+ZenBil.TextStrokeColor3 = Color3.fromRGB(255, 0, 200)
+
+
+ZenBil.TextStrokeTransparency = 0.000
+
+
+ZenBil.TextWrapped = true
+
+
+
+UITextSizeConstraint_34.Parent = ZenBil
+
+
+UITextSizeConstraint_34.MaxTextSize = 18
+
+
+
+Waterfall.Name = "Waterfall"
+
+
+Waterfall.Parent = TeleportsFrame
+
+
+Waterfall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Waterfall.BackgroundTransparency = 0.700
+
+
+Waterfall.Position = UDim2.new(0.51393187, 0, 0.927955151, 0)
+
+
+Waterfall.Size = UDim2.new(0.4860681, 0, 0.0719794333, 0)
+
+
+Waterfall.Font = Enum.Font.Nunito
+
+
+Waterfall.Text = "Waterfall | 1Qa+"
+
+
+Waterfall.TextColor3 = Color3.fromRGB(255, 190, 245)
+
+
+Waterfall.TextScaled = true
+
+
+Waterfall.TextSize = 18.000
+
+
+Waterfall.TextStrokeColor3 = Color3.fromRGB(255, 0, 200)
+
+
+Waterfall.TextStrokeTransparency = 0.000
+
+
+Waterfall.TextWrapped = true
+
+
+
+UITextSizeConstraint_35.Parent = Waterfall
+
+
+UITextSizeConstraint_35.MaxTextSize = 18
+
+
+
+Stats.Name = "Stats"
+
+
+Stats.Parent = RemadeBlackHub
+
+
+Stats.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+
+
+Stats.BackgroundTransparency = 0.450
+
+
+Stats.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+Stats.BorderSizePixel = 4
+
+
+Stats.Position = UDim2.new(0.781273723, 0, 1.23076928, 0)
+
+
+Stats.Size = UDim2.new(0.217486337, 0, 5.07692289, 0)
+
+
+
+Health.Name = "Health"
+
+
+Health.Parent = Stats
+
+
+Health.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Health.BackgroundTransparency = 1.000
+
+
+Health.Position = UDim2.new(-0.00499999989, 0, 0.0227272734, 0)
+
+
+Health.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Health.Font = Enum.Font.SpecialElite
+
+
+Health.Text = "Health:"
+
+
+Health.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Health.TextScaled = true
+
+
+Health.TextSize = 13.000
+
+
+Health.TextWrapped = true
+
+
+
+UITextSizeConstraint_36.Parent = Health
+
+
+UITextSizeConstraint_36.MaxTextSize = 13
+
+
+
+Fist_5.Name = "Fist"
+
+
+Fist_5.Parent = Stats
+
+
+Fist_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Fist_5.BackgroundTransparency = 1.000
+
+
+Fist_5.Position = UDim2.new(-0.00499999989, 0, 0.181818172, 0)
+
+
+Fist_5.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Fist_5.Font = Enum.Font.SpecialElite
+
+
+Fist_5.Text = "Fist:"
+
+
+Fist_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Fist_5.TextScaled = true
+
+
+Fist_5.TextSize = 13.000
+
+
+Fist_5.TextWrapped = true
+
+
+
+UITextSizeConstraint_37.Parent = Fist_5
+
+
+UITextSizeConstraint_37.MaxTextSize = 13
+
+
+
+Body_2.Name = "Body"
+
+
+Body_2.Parent = Stats
+
+
+Body_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Body_2.BackgroundTransparency = 1.000
+
+
+Body_2.Position = UDim2.new(-0.00499999989, 0, 0.340909064, 0)
+
+
+Body_2.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Body_2.Font = Enum.Font.SpecialElite
+
+
+Body_2.Text = "Body:"
+
+
+Body_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Body_2.TextScaled = true
+
+
+Body_2.TextSize = 13.000
+
+
+Body_2.TextWrapped = true
+
+
+
+UITextSizeConstraint_38.Parent = Body_2
+
+
+UITextSizeConstraint_38.MaxTextSize = 13
+
+
+
+Psychic_2.Name = "Psychic"
+
+
+Psychic_2.Parent = Stats
+
+
+Psychic_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Psychic_2.BackgroundTransparency = 1.000
+
+
+Psychic_2.Position = UDim2.new(-0.00499999989, 0, 0.49999994, 0)
+
+
+Psychic_2.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Psychic_2.Font = Enum.Font.SpecialElite
+
+
+Psychic_2.Text = "Psychic:"
+
+
+Psychic_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Psychic_2.TextScaled = true
+
+
+Psychic_2.TextSize = 13.000
+
+
+Psychic_2.TextWrapped = true
+
+
+
+UITextSizeConstraint_39.Parent = Psychic_2
+
+
+UITextSizeConstraint_39.MaxTextSize = 13
+
+
+
+Speed_2.Name = "Speed"
+
+
+Speed_2.Parent = Stats
+
+
+Speed_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Speed_2.BackgroundTransparency = 1.000
+
+
+Speed_2.Position = UDim2.new(-0.00499999989, 0, 0.659090817, 0)
+
+
+Speed_2.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Speed_2.Font = Enum.Font.SpecialElite
+
+
+Speed_2.Text = "Speed:"
+
+
+Speed_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Speed_2.TextScaled = true
+
+
+Speed_2.TextSize = 13.000
+
+
+Speed_2.TextWrapped = true
+
+
+
+UITextSizeConstraint_40.Parent = Speed_2
+
+
+UITextSizeConstraint_40.MaxTextSize = 13
+
+
+
+Jump_2.Name = "Jump"
+
+
+Jump_2.Parent = Stats
+
+
+Jump_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Jump_2.BackgroundTransparency = 1.000
+
+
+Jump_2.Position = UDim2.new(-0.00499999989, 0, 0.818181694, 0)
+
+
+Jump_2.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+Jump_2.Font = Enum.Font.SpecialElite
+
+
+Jump_2.Text = "Jump:"
+
+
+Jump_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Jump_2.TextScaled = true
+
+
+Jump_2.TextSize = 13.000
+
+
+Jump_2.TextWrapped = true
+
+
+
+UITextSizeConstraint_41.Parent = Jump_2
+
+
+UITextSizeConstraint_41.MaxTextSize = 13
+
+
+
+DisplayBt.Name = "DisplayBt"
+
+
+DisplayBt.Parent = Stats
+
+
+DisplayBt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayBt.BackgroundTransparency = 1.000
+
+
+DisplayBt.Position = UDim2.new(0.381934673, 0, 0.340909064, 0)
+
+
+DisplayBt.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayBt.Font = Enum.Font.SpecialElite
+
+
+DisplayBt.Text = "1"
+
+
+DisplayBt.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayBt.TextScaled = true
+
+
+DisplayBt.TextSize = 13.000
+
+
+DisplayBt.TextWrapped = true
+
+
+DisplayBt.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_42.Parent = DisplayBt
+
+
+UITextSizeConstraint_42.MaxTextSize = 13
+
+
+
+DisplayFs.Name = "DisplayFs"
+
+
+DisplayFs.Parent = Stats
+
+
+DisplayFs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayFs.BackgroundTransparency = 1.000
+
+
+DisplayFs.Position = UDim2.new(0.381934673, 0, 0.181818157, 0)
+
+
+DisplayFs.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayFs.Font = Enum.Font.SpecialElite
+
+
+DisplayFs.Text = "1"
+
+
+DisplayFs.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayFs.TextScaled = true
+
+
+DisplayFs.TextSize = 13.000
+
+
+DisplayFs.TextWrapped = true
+
+
+DisplayFs.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_43.Parent = DisplayFs
+
+
+UITextSizeConstraint_43.MaxTextSize = 13
+
+
+
+DisplayHp.Name = "DisplayHp"
+
+
+DisplayHp.Parent = Stats
+
+
+DisplayHp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayHp.BackgroundTransparency = 1.000
+
+
+DisplayHp.Position = UDim2.new(0.381934673, 0, 0.0227272511, 0)
+
+
+DisplayHp.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayHp.Font = Enum.Font.SpecialElite
+
+
+DisplayHp.Text = "1"
+
+
+DisplayHp.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayHp.TextScaled = true
+
+
+DisplayHp.TextSize = 13.000
+
+
+DisplayHp.TextWrapped = true
+
+
+DisplayHp.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_44.Parent = DisplayHp
+
+
+UITextSizeConstraint_44.MaxTextSize = 13
+
+
+
+DisplayPsy.Name = "DisplayPsy"
+
+
+DisplayPsy.Parent = Stats
+
+
+DisplayPsy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayPsy.BackgroundTransparency = 1.000
+
+
+DisplayPsy.Position = UDim2.new(0.381934673, 0, 0.49999997, 0)
+
+
+DisplayPsy.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayPsy.Font = Enum.Font.SpecialElite
+
+
+DisplayPsy.Text = "1"
+
+
+DisplayPsy.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayPsy.TextScaled = true
+
+
+DisplayPsy.TextSize = 13.000
+
+
+DisplayPsy.TextWrapped = true
+
+
+DisplayPsy.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_45.Parent = DisplayPsy
+
+
+UITextSizeConstraint_45.MaxTextSize = 13
+
+
+
+DisplayMs.Name = "DisplayMs"
+
+
+DisplayMs.Parent = Stats
+
+
+DisplayMs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayMs.BackgroundTransparency = 1.000
+
+
+DisplayMs.Position = UDim2.new(0.381934673, 0, 0.659090877, 0)
+
+
+DisplayMs.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayMs.Font = Enum.Font.SpecialElite
+
+
+DisplayMs.Text = "1"
+
+
+DisplayMs.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayMs.TextScaled = true
+
+
+DisplayMs.TextSize = 13.000
+
+
+DisplayMs.TextWrapped = true
+
+
+DisplayMs.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_46.Parent = DisplayMs
+
+
+UITextSizeConstraint_46.MaxTextSize = 13
+
+
+
+DisplayJp.Name = "DisplayJp"
+
+
+DisplayJp.Parent = Stats
+
+
+DisplayJp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayJp.BackgroundTransparency = 1.000
+
+
+DisplayJp.Position = UDim2.new(0.381934673, 0, 0.810606003, 0)
+
+
+DisplayJp.Size = UDim2.new(0.386934668, 0, 0.159090906, 0)
+
+
+DisplayJp.Font = Enum.Font.SpecialElite
+
+
+DisplayJp.Text = "1"
+
+
+DisplayJp.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+DisplayJp.TextScaled = true
+
+
+DisplayJp.TextSize = 13.000
+
+
+DisplayJp.TextWrapped = true
+
+
+DisplayJp.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+UITextSizeConstraint_47.Parent = DisplayJp
+
+
+UITextSizeConstraint_47.MaxTextSize = 13
+
+
+
+SplitTp.Name = "SplitTp"
+
+
+SplitTp.Parent = RemadeBlackHub
+
+
+SplitTp.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+SplitTp.BorderColor3 = Color3.fromRGB(61, 61, 61)
+
+
+SplitTp.BorderSizePixel = 4
+
+
+SplitTp.Position = UDim2.new(0.63319391, 0, 0, 0)
+
+
+SplitTp.Size = UDim2.new(0.145355195, 0, 1, 0)
+
+
+SplitTp.Font = Enum.Font.SourceSans
+
+
+SplitTp.Text = "Split & Tp"
+
+
+SplitTp.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+SplitTp.TextScaled = true
+
+
+SplitTp.TextSize = 18.000
+
+
+SplitTp.TextStrokeColor3 = Color3.fromRGB(0, 85, 255)
+
+
+SplitTp.TextStrokeTransparency = 0.000
+
+
+SplitTp.TextWrapped = true
+
+
+
+UITextSizeConstraint_48.Parent = SplitTp
+
+
+UITextSizeConstraint_48.MaxTextSize = 18
+
+
+
+-- Scripts:
+
+
+
+local function TBRL_fake_script() -- ESPButton.LocalScript 
+
+
+	local script = Instance.new('LocalScript', ESPButton)
+
+
+
+	ESPEnabled = false
+
+
+	ESPLength = 200000
+
+
+	button = script.Parent
+
+
+	local plr = game:GetService("Players").LocalPlayer
+
+
+	local char = plr.Character
+
+
+	local root = char.HumanoidRootPart
+
+
+	local Plrs = game:GetService("Players")
+
+
+	local MyPlr = Plrs.LocalPlayer
+
+
+	local MyChar = MyPlr.Character
+
+
+	local UIS = game:GetService'UserInputService'
+
+
+	local RepStor = game:GetService("ReplicatedStorage")
+
+
+	local CoreGui = game:GetService("CoreGui")
+
+
+	local Run = game:GetService("RunService")
+
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+
+
+	local human = plr.Character:WaitForChild("Humanoid")
+
+
+	
+
+
+	CharAddedEvent = { }
+
+
+	
+
+
+	
+
+
+	function RemoveESP(plr)
+
+
+		local ESP = CoreGui:FindFirstChild("ESP_" .. plr.Name)
+
+
+		if ESP then
+
+
+			ESP:Destroy()
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	function UpdateESP(plr)
+
+
+		local Find = CoreGui:FindFirstChild("ESP_" .. plr.Name)
+
+
+		if Find then
+
+
+			local plrStatus = game.Players[plr.Name].leaderstats.Status
+
+
+			if plrStatus.Value == "Criminal" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(1, 0.1, 1)
+
+
+			elseif plrStatus.Value == "Lawbreaker" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(1, 0.1, 0.1)
+
+
+			elseif plrStatus.Value == "Guardian" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(0.1, 0.8, 1)
+
+
+			elseif plrStatus.Value == "Protector" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(0.1, 0.1, 1)
+
+
+			elseif plrStatus.Value == "Supervillain" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(0.3, 0.1, 0.1)
+
+
+			elseif plrStatus.Value == "Superhero" then
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(0.8, 0.8, 0)
+
+
+			else
+
+
+				Find.Frame.Names.TextColor3 = Color3.new(1, 1, 1)
+
+
+			end
+
+
+			Find.Frame.Dist.TextColor3 = Color3.new(1, 1, 1)
+
+
+			Find.Frame.Health.TextColor3 = Color3.new(1, 1, 1)
+
+
+			Find.Frame.Fist.TextColor3 = Color3.new(1, 1, 1)
+
+
+			Find.Frame.Psychic.TextColor3 = Color3.new(1, 1, 1)
+
+
+			local GetChar = plr.Character
+
+
+			if MyChar and GetChar then
+
+
+				local Find2 = MyChar:FindFirstChild("HumanoidRootPart")
+
+
+				local Find3 = GetChar:FindFirstChild("HumanoidRootPart")
+
+
+				local Find4 = GetChar:FindFirstChildOfClass("Humanoid")
+
+
+				if Find2 and Find3 then
+
+
+					local pos = Find3.Position
+
+
+					local Dist = (Find2.Position - pos).magnitude
+
+
+					if Dist > ESPLength then
+
+
+						Find.Frame.Names.Visible = false
+
+
+						Find.Frame.Dist.Visible = false
+
+
+						Find.Frame.Health.Visible = false
+
+
+						Find.Frame.Fist.Visible = false
+
+
+						Find.Frame.Psychic.Visible = false
+
+
+						return
+
+
+					else
+
+
+						Find.Frame.Names.Visible = true
+
+
+						Find.Frame.Dist.Visible = true
+
+
+						Find.Frame.Health.Visible = true
+
+
+						Find.Frame.Fist.Visible = true
+
+
+						Find.Frame.Psychic.Visible = true
+
+
+					end
+
+
+					Find.Frame.Dist.Text = "Distance: " .. string.format("%.0f", Dist)
+
+
+					--Find.Frame.Pos.Text = "(X: " .. string.format("%.0f", pos.X) .. ", Y: " .. string.format("%.0f", pos.Y) .. ", Z: " .. string.format("%.0f", pos.Z) .. ")"
+
+
+					if Find4 then
+
+
+						Find.Frame.Health.Text = "Health: " ..converttoletter(string.format("%.0f", Find4.Health))
+
+
+						Find.Frame.Fist.Text = "Fist: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.FistStrength.Value))
+
+
+						Find.Frame.Psychic.Text = "Psychic: " ..converttoletter(string.format("%.0f", game.Players[plr.Name].PrivateStats.PsychicPower.Value))
+
+
+					else
+
+
+						Find.Frame.Health.Text = ""
+
+
+						Find.Frame.Fist.Text = ""
+
+
+						Find.Frame.Psychic.Text = ""
+
+
+					end
+
+
+				end
+
+
+			end
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	function CreateESP(plr)
+
+
+		if plr ~= nil then
+
+
+			local GetChar = plr.Character
+
+
+			if not GetChar then return end
+
+
+			local GetHead do
+
+
+				repeat wait() until GetChar:FindFirstChild("Head")
+
+
+			end
+
+
+			GetHead = GetChar.Head
+
+
+	
+
+
+			local bb = Instance.new("BillboardGui", CoreGui)
+
+
+			bb.Adornee = GetHead
+
+
+			bb.ExtentsOffset = Vector3.new(0, 1, 0)
+
+
+			bb.AlwaysOnTop = true
+
+
+			bb.Size = UDim2.new(0, 5, 0, 5)
+
+
+			bb.StudsOffset = Vector3.new(0, 3, 0)
+
+
+			bb.Name = "ESP_" .. plr.Name
+
+
+	
+
+
+			local frame = Instance.new("Frame", bb)
+
+
+			frame.ZIndex = 10
+
+
+			frame.BackgroundTransparency = 1
+
+
+			frame.Size = UDim2.new(1, 0, 1, 0)
+
+
+	
+
+
+			local TxtName = Instance.new("TextLabel", frame)
+
+
+			TxtName.Name = "Names"
+
+
+			TxtName.ZIndex = 10
+
+
+			TxtName.Text = plr.Name
+
+
+			TxtName.BackgroundTransparency = 1
+
+
+			TxtName.Position = UDim2.new(0, 0, 0, -45)
+
+
+			TxtName.Size = UDim2.new(1, 0, 10, 0)
+
+
+			TxtName.Font = "SourceSansBold"
+
+
+			TxtName.TextColor3 = Color3.new(0, 0, 0)
+
+
+			TxtName.TextSize = 14
+
+
+			TxtName.TextStrokeTransparency = 0.5
+
+
+	
+
+
+			local TxtDist = Instance.new("TextLabel", frame)
+
+
+			TxtDist.Name = "Dist"
+
+
+			TxtDist.ZIndex = 10
+
+
+			TxtDist.Text = ""
+
+
+			TxtDist.BackgroundTransparency = 1
+
+
+			TxtDist.Position = UDim2.new(0, 0, 0, -35)
+
+
+			TxtDist.Size = UDim2.new(1, 0, 10, 0)
+
+
+			TxtDist.Font = "SourceSansBold"
+
+
+			TxtDist.TextColor3 = Color3.new(0, 0, 0)
+
+
+			TxtDist.TextSize = 15
+
+
+			TxtDist.TextStrokeTransparency = 0.5
+
+
+	
+
+
+			local TxtHealth = Instance.new("TextLabel", frame)
+
+
+			TxtHealth.Name = "Health"
+
+
+			TxtHealth.ZIndex = 10
+
+
+			TxtHealth.Text = ""
+
+
+			TxtHealth.BackgroundTransparency = 1
+
+
+			TxtHealth.Position = UDim2.new(0, 0, 0, -25)
+
+
+			TxtHealth.Size = UDim2.new(1, 0, 10, 0)
+
+
+			TxtHealth.Font = "SourceSansBold"
+
+
+			TxtHealth.TextColor3 = Color3.new(0, 0, 0)
+
+
+			TxtHealth.TextSize = 15
+
+
+			TxtHealth.TextStrokeTransparency = 0.5
+
+
+	
+
+
+			local TxtFist = Instance.new("TextLabel", frame)
+
+
+			TxtFist.Name = "Fist"
+
+
+			TxtFist.ZIndex = 10
+
+
+			TxtFist.Text = ""
+
+
+			TxtFist.BackgroundTransparency = 1
+
+
+			TxtFist.Position = UDim2.new(0, 0, 0, -15)
+
+
+			TxtFist.Size = UDim2.new(1, 0, 10, 0)
+
+
+			TxtFist.Font = "SourceSansBold"
+
+
+			TxtFist.TextColor3 = Color3.new(0, 0, 0)
+
+
+			TxtFist.TextSize = 15
+
+
+			TxtFist.TextStrokeTransparency = 0.5
+
+
+	
+
+
+			local TxtPsychic = Instance.new("TextLabel", frame)
+
+
+			TxtPsychic.Name = "Psychic"
+
+
+			TxtPsychic.ZIndex = 10
+
+
+			TxtPsychic.Text = ""
+
+
+			TxtPsychic.BackgroundTransparency = 1
+
+
+			TxtPsychic.Position = UDim2.new(0, 0, 0, -5)
+
+
+			TxtPsychic.Size = UDim2.new(1, 0, 10, 0)
+
+
+			TxtPsychic.Font = "SourceSansBold"
+
+
+			TxtPsychic.TextColor3 = Color3.new(0, 0, 0)
+
+
+			TxtPsychic.TextSize = 15
+
+
+			TxtPsychic.TextStrokeTransparency = 0.5
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	Plrs.PlayerRemoving:connect(function(plr)
+
+
+		if CharAddedEvent[plr.Name] ~= nil then
+
+
+			CharAddedEvent[plr.Name]:Disconnect()
+
+
+			CharAddedEvent[plr.Name] = nil
+
+
+		end
+
+
+		RemoveESP(plr)
+
+
+	end)
+
+
+	
+
+
+	Plrs.PlayerAdded:connect(function(plr)
+
+
+		if CharAddedEvent[plr.Name] == nil then
+
+
+			CharAddedEvent[plr.Name] = plr.CharacterAdded:connect(function(char)
+
+
+				if ESPEnabled then
+
+
+					RemoveESP(plr)
+
+
+					CreateESP(plr)
+
+
+				end
+
+
+			end)
+
+
+		end
+
+
+	end)
+
+
+	
+
+
+	Run:BindToRenderStep("UpdateESP", Enum.RenderPriority.Character.Value, function()
+
+
+		for _, v in next, Plrs:GetPlayers() do
+
+
+			UpdateESP(v)
+
+
+		end
+
+
+	end)
+
+
+	
+
+
+	
+
+
+	function round(num, numDecimalPlaces)
+
+
+		local mult = 10^(numDecimalPlaces or 0)
+
+
+		return math.floor(num * mult + 0.5) / mult
+
+
+	end
+
+
+	
+
+
+	function converttoletter(num)
+
+
+		local newnum = 0
+
+
+		if num / 1e21 >=1 then
+
+
+			newnum = num / 1e21
+
+
+			return round(newnum, 6).. "Sx"
+
+
+		elseif num / 1e18 >=1 then
+
+
+			newnum = num / 1e18
+
+
+			return round(newnum, 6).. "Qi"
+
+
+		elseif num / 1e15 >=1 then
+
+
+			newnum = num / 1e15
+
+
+			return round(newnum, 6).. "Qa"
+
+
+		elseif num / 1e12 >=1 then
+
+
+			newnum = num / 1e12
+
+
+			return round(newnum, 6).. "T"
+
+
+		elseif num / 1e09 >=1 then
+
+
+			newnum = num / 1e09
+
+
+			return round(newnum, 6).. "B"
+
+
+		elseif num / 1e06 >=1 then
+
+
+			newnum = num / 1e06
+
+
+			return round(newnum, 6).. "M"
+
+
+		elseif num / 1e03 >=1 then
+
+
+			newnum = num / 1e03
+
+
+			return round(newnum, 6).. "K"
+
+
+		else return num
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:connect(function()
+
+
+		ESPEnabled = not ESPEnabled
+
+
+		if ESPEnabled then
+
+
+			button.BackgroundColor3 = Color3.new(0.0901961, 0.701961, 0.0784314)
+
+
+			for _, v in next, Plrs:GetPlayers() do
+
+
+				if v ~= MyPlr then
+
+
+					if CharAddedEvent[v.Name] == nil then
+
+
+						CharAddedEvent[v.Name] = v.CharacterAdded:connect(function(Char)
+
+
+							if ESPEnabled then
+
+
+								RemoveESP(v)
+
+
+								CreateESP(v)
+
+
+							end
+
+
+							repeat wait() until Char:FindFirstChild("HumanoidRootPart")
+
+
+						end)
+
+
+					end
+
+
+					RemoveESP(v)
+
+
+					CreateESP(v)
+
+
+				end
+
+
+			end
+
+
+		else
+
+
+			button.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+
+
+			for _, v in next, Plrs:GetPlayers() do
+
+
+				RemoveESP(v)
+
+
+			end
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(TBRL_fake_script)()
+
+
+local function QTVCOQ_fake_script() -- AutoFarm.LocalScript 
+
+
+	local script = Instance.new('LocalScript', AutoFarm)
+
+
+
+	local button = script.Parent
+
+
+	local frame = script.Parent.Parent.Farm
+
+
+	local frame2 = script.Parent.Parent.TeleportsFrame
+
+
+	local button2 = script.Parent.Parent.Teleports
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(23, 179, 20)
+
+
+		if frame.Visible == false then
+
+
+			frame.Visible = true
+
+
+			frame2.Visible = false
+
+
+			button2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		if frame.Visible == true then	
+
+
+			frame.Visible = false
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(23, 179, 20) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(44, 44, 44) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(QTVCOQ_fake_script)()
+
+
+local function OYOF_fake_script() -- Fist.Fist 
+
+
+	local script = Instance.new('LocalScript', Fist)
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	local button = script.Parent
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(98, 255, 87)
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-369, 15735, -9)
+
+
+		_G.Fist = true
+
+
+		while _G.Fist == true do
+
+
+			wait()
+
+
+			local args = {
+
+
+				[1] = {
+
+
+					[1] = "+FS1"
+
+
+				}
+
+
+			}
+
+
+	
+
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+		_G.fist = false
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(98, 255, 87) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(95, 95, 95) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(OYOF_fake_script)()
+
+
+local function FHCU_fake_script() -- Body.Body 
+
+
+	local script = Instance.new('LocalScript', Body)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(98, 255, 87)
+
+
+		_G.Body = true
+
+
+		while _G.Body == true do
+
+
+			wait()
+
+
+			local args = {
+
+
+				[1] = {
+
+
+					[1] = "+BT1"
+
+
+				}
+
+
+			}
+
+
+	
+
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+		_G.Body = false
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(98, 255, 87) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(95, 95, 95) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+	
+
+
+	
+
+
+		
+
+
+end
+
+
+coroutine.wrap(FHCU_fake_script)()
+
+
+local function VTIQUJF_fake_script() -- Psychic.Psychic 
+
+
+	local script = Instance.new('LocalScript', Psychic)
+
+
+
+	
+
+
+	
+
+
+	local button = script.Parent
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(98, 255, 87)
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2544, 5413, -495)
+
+
+		_G.Psy = true
+
+
+		while _G.Psy == true do
+
+
+			wait()
+
+
+			local args = {
+
+
+				[1] = {
+
+
+					[1] = "+PP1"
+
+
+				}
+
+
+			}
+
+
+	
+
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+		_G.Psy = false
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(98, 255, 87) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(95, 95, 95) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(VTIQUJF_fake_script)()
+
+
+local function XRHDHWO_fake_script() -- Speed.Speed 
+
+
+	local script = Instance.new('LocalScript', Speed)
+
+
+
+	
+
+
+	
+
+
+	local button = script.Parent
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(98, 255, 87)
+
+
+		_G.Speed = true
+
+
+		while _G.Speed == true do
+
+
+			wait()
+
+
+			local args = {
+
+
+				[1] = {
+
+
+					[1] = "+MS1"
+
+
+				}
+
+
+			}
+
+
+	
+
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+		_G.Speed = false
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(98, 255, 87) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(95, 95, 95) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(XRHDHWO_fake_script)()
+
+
+local function JSAFTA_fake_script() -- Jump.Jump 
+
+
+	local script = Instance.new('LocalScript', Jump)
+
+
+
+	
+
+
+	
+
+
+	local button = script.Parent
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(98, 255, 87)
+
+
+		_G.Jump = true
+
+
+		while _G.Jump == true do
+
+
+			wait()
+
+
+			local args = {
+
+
+				[1] = {
+
+
+					[1] = "+JF1"
+
+
+				}
+
+
+			}
+
+
+	
+
+
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+
+
+		_G.Jump = false
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(98, 255, 87) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(95, 95, 95) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(JSAFTA_fake_script)()
+
+
+local function DONTFJ_fake_script() -- Close.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Close)
+
+
+
+	button = script.Parent
+
+
+	a = script.Parent.Parent.Parent.RemadeBlackHub
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		a:Destroy()
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(DONTFJ_fake_script)()
+
+
+local function CBENL_fake_script() -- Minimise.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Minimise)
+
+
+
+	local button = script.Parent
+
+
+	local frame = script.Parent.Parent.Parent.RemadeBlackHub
+
+
+	local frame2 = script.Parent.Parent.TeleportsFrame
+
+
+	local frame3 = script.Parent.Parent.Farm
+
+
+	local frame4 = script.Parent.Parent.Stats
+
+
+	local Button1 = script.Parent.Parent.ESPButton
+
+
+	local Button2 = script.Parent.Parent.OnDeathReturn
+
+
+	local Button3 = script.Parent.Parent.AutoFarm
+
+
+	local Button4 = script.Parent.Parent.TargetBox
+
+
+	local Button5 = script.Parent.Parent.Teleports
+
+
+	local Button6 = script.Parent.Parent.SplitTp
+
+
+	
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(44, 44, 45)
+
+
+		
+
+
+		frame:TweenSizeAndPosition(
+
+
+			UDim2.new(0, 788,0, 26),
+
+
+			UDim2.new(0.311, 0,0, 0),
+
+
+			"Out",
+
+
+			"Back",
+
+
+			2,
+
+
+			true
+
+
+		)
+
+
+		Button1.Visible = true
+
+
+		Button2.Visible = true
+
+
+		Button3.Visible = true
+
+
+		Button4.Visible = true
+
+
+		Button5.Visible = true
+
+
+		Button6.Visible = true
+
+
+		frame4.Visible = true
+
+
+		frame.BackgroundTransparency = 0
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		frame:TweenSizeAndPosition(
+
+
+			UDim2.new(0, 64,0, 26),
+
+
+			UDim2.new(0.311, 0,0, 0),
+
+
+			"Out",
+
+
+			"Back",
+
+
+			2,
+
+
+			true
+
+
+		)
+
+
+		wait(1)
+
+
+		Button1.Visible = false
+
+
+		Button2.Visible = false
+
+
+		Button3.Visible = false
+
+
+		Button4.Visible = false
+
+
+		Button5.Visible = false
+
+
+		Button6.Visible = false
+
+
+		frame2.Visible = false
+
+
+		frame3.Visible = false
+
+
+		frame4.Visible = false
+
+
+		frame.BackgroundTransparency = 1
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(44, 44, 45) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(44, 44, 44) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(CBENL_fake_script)()
+
+
+local function CXQR_fake_script() -- OnDeathReturn.LocalScript 
+
+
+	local script = Instance.new('LocalScript', OnDeathReturn)
+
+
+
+	local button = script.Parent
+
+
+	player = game.Players.LocalPlayer.Character.Humanoid
+
+
+	
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(23, 179, 20)
+
+
+		_G.DD = 1
+
+
+		while _G.DD == 1 do
+
+
+			wait()
+
+
+			OnDeath()
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		_G.DD = 0
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(23, 179, 20) then
+
+
+			button.Text = "OnDeath Return: OFF"
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(44, 44, 44) then
+
+
+			button.Text = "OnDeath Return: ON"
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+	
+
+
+	function OnDeath()
+
+
+		print("\nauto respawn script made by Corey ;)")
+
+
+		wait(0.1)
+
+
+		local SavePosition = Instance.new("TextLabel")
+
+
+		player.HealthChanged:Connect(function(hp)
+
+
+			if hp <= player.MaxHealth * 0.3 then
+
+
+				game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+
+
+				lastlocationx = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.x
+
+
+				lastlocationy = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y
+
+
+				lastlocationz = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.z
+
+
+				SavePosition.Text = "Last Place: " ..lastlocationx.. "," ..lastlocationy.. "," ..lastlocationz.. ","
+
+
+				wait(0.7544)
+
+
+				repeat wait(0.1) until game.Players.LocalPlayer.Character.Humanoid
+
+
+				local FindHum = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+
+
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lastlocationx, lastlocationy, lastlocationz)
+
+
+			end
+
+
+		end)
+
+
+	end
+
+
+end
+
+
+coroutine.wrap(CXQR_fake_script)()
+
+
+local function VYRN_fake_script() -- TargetBox.LocalScript 
+
+
+	local script = Instance.new('LocalScript', TargetBox)
+
+
+
+	Target = script.Parent
+
+
+	
+
+
+	Target.FocusLost:connect(function()
+
+
+		for i,v in pairs(game.Players:GetChildren()) do
+
+
+			if(string.sub(string.lower(v.Name),1,string.len(Target.Text))) == string.lower(Target.Text) then
+
+
+				Target.Text = v.Name
+
+
+			end
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(VYRN_fake_script)()
+
+
+local function ZNKQHZD_fake_script() -- Teleports.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Teleports)
+
+
+
+	local button = script.Parent
+
+
+	local frame = script.Parent.Parent.TeleportsFrame
+
+
+	local frame2 = script.Parent.Parent.Farm
+
+
+	local button2 = script.Parent.Parent.AutoFarm
+
+
+	
+
+
+	local function ToggleOn()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(23, 179, 20)
+
+
+		if frame.Visible == false then
+
+
+			frame.Visible = true
+
+
+			frame2.Visible = false
+
+
+			button2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	
+
+
+	local function ToggleOff()
+
+
+		button.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+
+
+		if frame.Visible == true then	
+
+
+			frame.Visible = false
+
+
+		end
+
+
+	end
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		if button.BackgroundColor3 == Color3.fromRGB(23, 179, 20) then
+
+
+			ToggleOff()
+
+
+	
+
+
+		elseif button.BackgroundColor3 == Color3.fromRGB(44, 44, 44) then
+
+
+			ToggleOn()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(ZNKQHZD_fake_script)()
+
+
+local function EDSV_fake_script() -- SafeZone.SafeZone 
+
+
+	local script = Instance.new('LocalScript', SafeZone)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(459, 249, 887)
+
+
+	end)
+
+
+	
+
+
+end
+
+
+coroutine.wrap(EDSV_fake_script)()
+
+
+local function EXETB_fake_script() -- Rock.Rock 
+
+
+	local script = Instance.new('LocalScript', Rock)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(409, 271, 978)
+
+
+	end)
+
+
+	
+
+
+end
+
+
+coroutine.wrap(EXETB_fake_script)()
+
+
+local function WLQUD_fake_script() -- Crystal.Crystal 
+
+
+	local script = Instance.new('LocalScript', Crystal)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2279, 1944, 1053)
+
+
+	end)
+
+
+	
+
+
+end
+
+
+coroutine.wrap(WLQUD_fake_script)()
+
+
+local function QUONFE_fake_script() -- BlueStar.BlueStar 
+
+
+	local script = Instance.new('LocalScript', BlueStar)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1176, 4790, -2293)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(QUONFE_fake_script)()
+
+
+local function CJIUW_fake_script() -- GreenStar.GreenStar 
+
+
+	local script = Instance.new('LocalScript', GreenStar)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1381, 9275, 1647)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(CJIUW_fake_script)()
+
+
+local function MVDR_fake_script() -- RedStar.RedStar 
+
+
+	local script = Instance.new('LocalScript', RedStar)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-369, 15735, -9)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(MVDR_fake_script)()
+
+
+local function NBWQNF_fake_script() -- CityPort100.CityPort100 
+
+
+	local script = Instance.new('LocalScript', CityPort100)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(365, 250, -445)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(NBWQNF_fake_script)()
+
+
+local function GPGOL_fake_script() -- CityPort10k.CityPort10K 
+
+
+	local script = Instance.new('LocalScript', CityPort10k)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(349, 264, -490)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(GPGOL_fake_script)()
+
+
+local function KVPSR_fake_script() -- Iceberg.Iceberg 
+
+
+	local script = Instance.new('LocalScript', Iceberg)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1640, 259, 2244)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(KVPSR_fake_script)()
+
+
+local function EVTRSNS_fake_script() -- Volcano.Volcano 
+
+
+	local script = Instance.new('LocalScript', Volcano)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2024, 714, -1860)
+
+
+	end)
+
+
+	
+
+
+end
+
+
+coroutine.wrap(EVTRSNS_fake_script)()
+
+
+local function JAFTTZ_fake_script() -- GreenPool.GreenPool 
+
+
+	local script = Instance.new('LocalScript', GreenPool)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-271, 282, 991)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(JAFTTZ_fake_script)()
+
+
+local function NAHTNH_fake_script() -- Tornado.Tornado 
+
+
+	local script = Instance.new('LocalScript', Tornado)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2307, 976, 1068)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(NAHTNH_fake_script)()
+
+
+local function GXBR_fake_script() -- GreenFlame.GreenFlame 
+
+
+	local script = Instance.new('LocalScript', GreenFlame)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-254, 287, 980)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(GXBR_fake_script)()
+
+
+local function AXGVL_fake_script() -- RedPool.RedPool 
+
+
+	local script = Instance.new('LocalScript', RedPool)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-279, 282, 1007)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(AXGVL_fake_script)()
+
+
+local function OMUGXQJ_fake_script() -- ZenMil.ZenMil 
+
+
+	local script = Instance.new('LocalScript', ZenMil)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2527, 5486, -532)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(OMUGXQJ_fake_script)()
+
+
+local function JNMTY_fake_script() -- Bridge.Bridge 
+
+
+	local script = Instance.new('LocalScript', Bridge)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2527, 5486, -532)
+
+
+	end)
+
+
+	
+
+
+end
+
+
+coroutine.wrap(JNMTY_fake_script)()
+
+
+local function VBIDYS_fake_script() -- ZenBil.ZenBil 
+
+
+	local script = Instance.new('LocalScript', ZenBil)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2560, 5501, -439)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(VBIDYS_fake_script)()
+
+
+local function RGVE_fake_script() -- Waterfall.Waterfall 
+
+
+	local script = Instance.new('LocalScript', Waterfall)
+
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2544, 5413, -495)
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(RGVE_fake_script)()
+
+
+local function BCRB_fake_script() -- Stats.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Stats)
+
+
+
+	--Defining Variables--
+
+
+	Target = script.Parent.Parent.TargetBox
+
+
+	
+
+
+	
+
+
+	if Target.Text == nil or Target.Text == " " or Target.Text == "" then
+
+
+		Target.Text = game:GetService("Players").LocalPlayer.Name
+
+
+	end
+
+
+	
+
+
+	
+
+
+	
+
+
+	--Defining Variables--
+
+
+	
+
+
+	
+
+
+	
+
+
+	Fs = game:GetService("Players")[Target.Text].PrivateStats.FistStrength.Value
+
+
+	Bt = game:GetService("Players")[Target.Text].PrivateStats.BodyToughness.Value
+
+
+	Psy = game:GetService("Players")[Target.Text].PrivateStats.PsychicPower.Value
+
+
+	Speed = game:GetService("Players")[Target.Text].PrivateStats.MovementSpeed.Value
+
+
+	Jump = game:GetService("Players")[Target.Text].PrivateStats.JumpForce.Value
+
+
+	totalhp = game:GetService("Players")[Target.Text].Character.Humanoid.Health
+
+
+	
+
+
+	
+
+
+	DisplayFs = script.Parent.DisplayFs
+
+
+	DisplayBt = script.Parent.DisplayBt
+
+
+	DisplayPsy = script.Parent.DisplayPsy
+
+
+	DisplayMs = script.Parent.DisplayMs
+
+
+	DisplayHp = script.Parent.DisplayHp
+
+
+	DisplayJp = script.Parent.DisplayJp
+
+
+	--Script--
+
+
+	--Made by 1xToxsins#8515
+
+
+	local abbreviations = {
+
+
+		"",
+
+
+		"K",
+
+
+		"M",
+
+
+		"B",
+
+
+		"T",
+
+
+		"Qa",
+
+
+		"Qi",
+
+
+		"Sx",
+
+
+		"Sp",
+
+
+		"Oc",
+
+
+		"No",
+
+
+		"Dc",
+
+
+		"Un",
+
+
+		"Duo",
+
+
+		"Tre",
+
+
+		"Qua",
+
+
+		"Qui",
+
+
+		"Sed",
+
+
+		"Sep",
+
+
+		"Oct",
+
+
+		"Nov",
+
+
+		"V"
+
+
+	}
+
+
+	-- You can remove or add if you feel
+
+
+	-- 100Qa, 700Oc, 999Sep, etc.
+
+
+	local function Format(value, idp)
+
+
+		local ex = math.floor(math.log(math.max(1, math.abs(value)), 1000))
+
+
+		local abbrevs = abbreviations[1 + ex] or ("e+" .. ex)
+
+
+		local normal = math.floor(value * ((10 ^ idp) / (1000 ^ ex))) / (10 ^ idp)
+
+
+		return ("%." .. idp .. "f%s"):format(normal, abbrevs)
+
+
+	end
+
+
+	function Display()
+
+
+		DisplayFs.Text = Format(Fs,4)
+
+
+		DisplayBt.Text = Format(Bt,4)
+
+
+		DisplayPsy.Text = Format(Psy,4)
+
+
+		DisplayMs.Text = Format(Speed,4)
+
+
+		DisplayJp.Text = Format(Jump,4)
+
+
+		DisplayHp.Text = Format(totalhp,4)
+
+
+	end
+
+
+	
+
+
+	Display()
+
+
+	
+
+
+	
+
+
+	Target.FocusLost:Connect(function(enterpressed)
+
+
+		if enterpressed then
+
+
+			for i,v in pairs(game.Players:GetChildren()) do
+
+
+				if(string.sub(string.lower(v.Name),1,string.len(Target.Text))) == string.lower(Target.Text) then
+
+
+					Target.Text = v.Name
+
+
+				end
+
+
+			end
+
+
+			Fs = game:GetService("Players")[Target.Text].PrivateStats.FistStrength.Value
+
+
+			Bt = game:GetService("Players")[Target.Text].PrivateStats.BodyToughness.Value
+
+
+			Psy = game:GetService("Players")[Target.Text].PrivateStats.PsychicPower.Value
+
+
+			Speed = game:GetService("Players")[Target.Text].PrivateStats.MovementSpeed.Value
+
+
+			Jump = game:GetService("Players")[Target.Text].PrivateStats.JumpForce.Value
+
+
+			totalhp = game:GetService("Players")[Target.Text].Character.Humanoid.Health
+
+
+			Display()
+
+
+		end
+
+
+	end)
+
+
+	
+
+
+	while true do
+
+
+		task.wait()
+
+
+		pcall(function()
+
+
+			Fs = game:GetService("Players")[Target.Text].PrivateStats.FistStrength.Value
+
+
+			Bt = game:GetService("Players")[Target.Text].PrivateStats.BodyToughness.Value
+
+
+			Psy = game:GetService("Players")[Target.Text].PrivateStats.PsychicPower.Value
+
+
+			Speed = game:GetService("Players")[Target.Text].PrivateStats.MovementSpeed.Value
+
+
+			Jump = game:GetService("Players")[Target.Text].PrivateStats.JumpForce.Value
+
+
+			totalhp = game:GetService("Players")[Target.Text].Character.Humanoid.Health
+
+
+			Display()
+
+
+		end)
+
+
+	end
+
+
+end
+
+
+coroutine.wrap(BCRB_fake_script)()
+
+
+local function SDFB_fake_script() -- SplitTp.LocalScript 
+
+
+	local script = Instance.new('LocalScript', SplitTp)
+
+
+
+	
+
+
+	local button = script.Parent
+
+
+	
+
+
+	button.MouseButton1Click:Connect(function()
+
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/OP%20Split", true))()
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(SDFB_fake_script)()
+
+
+local function ODVAC_fake_script() -- RemadeBlackHub.LocalScript 
+
+
+	local script = Instance.new('LocalScript', RemadeBlackHub)
+
+
+
+	script.Parent.Active = true
+
+
+	script.Parent.Selectable = true
+
+
+	script.Parent.Draggable = true
+
+
+end
+
+
+coroutine.wrap(ODVAC_fake_script)()
+
+
+local function XSTU_fake_script() -- OperationV1Part2.LocalScript 
+
+
+	local script = Instance.new('LocalScript', OperationV1Part2)
+
+
+
+	local blackhub = script.Parent
+
+
+	
+
+
+	blackhub.Parent = game:GetService("CoreGui")
+
+
+	
+
+
+	
+
+
+	if syn then
+
+
+		syn.protect_gui(blackhub)
+
+
+	end
+
+
+end
+
+
+coroutine.wrap(XSTU_fake_script)()
+
+
