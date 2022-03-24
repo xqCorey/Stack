@@ -3,97 +3,187 @@
 
 -- Instances:
 
-local CoreysStack = Instance.new("ScreenGui")
-local Mainframe = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local Target = Instance.new("TextBox")
+local Stack = Instance.new("ScreenGui")
+local StackFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local KillButton = Instance.new("TextButton")
-local DestroyGui = Instance.new("TextButton")
-local RejoinButton = Instance.new("TextButton")
-local PlayerImage = Instance.new("ImageLabel")
+local Targetbox = Instance.new("TextBox")
+local autoAttack = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Stack_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local ColourBar = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local SideNote = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextLabel")
+local Rejoin = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local Open = Instance.new("Frame")
+local openButton = Instance.new("TextButton")
 
 --Properties:
 
-CoreysStack.Name = "Coreys Stack"
-CoreysStack.Parent = game.CoreGui
-CoreysStack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Stack.Name = "Stack"
+Stack.Parent = game.CoreGui
+Stack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Mainframe.Name = "Mainframe"
-Mainframe.Parent = CoreysStack
-Mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Mainframe.BackgroundTransparency = 0.400
-Mainframe.Position = UDim2.new(0.404135376, 0, 0.379141122, 0)
-Mainframe.Size = UDim2.new(0, 410, 0, 231)
-Mainframe.Active = true
-Mainframe.Draggable = true
+StackFrame.Name = "StackFrame"
+StackFrame.Parent = Stack
+StackFrame.BackgroundColor3 = Color3.fromRGB(67, 202, 202)
+StackFrame.BackgroundTransparency = 0.600
+StackFrame.Position = UDim2.new(0.304511279, 0, 0.320879132, 0)
+StackFrame.Size = UDim2.new(0, 456, 0, 405)
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
-UIGradient.Parent = Mainframe
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = StackFrame
 
-Target.Name = "Target"
-Target.Parent = Mainframe
-Target.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Target.BackgroundTransparency = 0.700
-Target.Position = UDim2.new(0.253658533, 0, 0.233766228, 0)
-Target.Size = UDim2.new(0, 268, 0, 50)
-Target.Font = Enum.Font.SourceSans
-Target.Text = ""
-Target.TextColor3 = Color3.fromRGB(255, 255, 255)
-Target.TextSize = 14.000
+Targetbox.Name = "Targetbox"
+Targetbox.Parent = StackFrame
+Targetbox.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Targetbox.BackgroundTransparency = 0.650
+Targetbox.Position = UDim2.new(0.0526315719, 0, 0.377777785, 0)
+Targetbox.Size = UDim2.new(0, 200, 0, 61)
+Targetbox.Font = Enum.Font.SourceSans
+Targetbox.Text = ""
+Targetbox.TextColor3 = Color3.fromRGB(252, 252, 252)
+Targetbox.TextSize = 31.000
 
-UICorner.Parent = Target
+autoAttack.Name = "autoAttack"
+autoAttack.Parent = StackFrame
+autoAttack.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+autoAttack.BackgroundTransparency = 0.350
+autoAttack.Position = UDim2.new(0.032894738, 0, 0.590946436, 0)
+autoAttack.Size = UDim2.new(0, 200, 0, 61)
+autoAttack.Font = Enum.Font.Oswald
+autoAttack.Text = "Auto Attack"
+autoAttack.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoAttack.TextSize = 30.000
 
-KillButton.Name = "KillButton"
-KillButton.Parent = Mainframe
-KillButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-KillButton.BackgroundTransparency = 0.450
-KillButton.Position = UDim2.new(0.253658533, 0, 0.519480526, 0)
-KillButton.Size = UDim2.new(0, 268, 0, 50)
-KillButton.Font = Enum.Font.Cartoon
-KillButton.Text = "Kill (right click to activate auto attack)"
-KillButton.TextColor3 = Color3.fromRGB(61, 61, 61)
-KillButton.TextSize = 19.000
-KillButton.TextStrokeColor3 = Color3.fromRGB(0, 170, 255)
-KillButton.TextStrokeTransparency = 0.000
-KillButton.TextWrapped = true
+UICorner_2.CornerRadius = UDim.new(0, 8989)
+UICorner_2.Parent = autoAttack
 
-DestroyGui.Name = "DestroyGui"
-DestroyGui.Parent = Mainframe
-DestroyGui.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-DestroyGui.BackgroundTransparency = 0.900
-DestroyGui.Position = UDim2.new(0.870731533, 0, 0, 0)
-DestroyGui.Size = UDim2.new(0, 52, 0, 40)
-DestroyGui.Font = Enum.Font.SourceSans
-DestroyGui.Text = "X"
-DestroyGui.TextColor3 = Color3.fromRGB(255, 0, 0)
-DestroyGui.TextSize = 25.000
+Stack_2.Name = "Stack"
+Stack_2.Parent = StackFrame
+Stack_2.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Stack_2.BackgroundTransparency = 0.350
+Stack_2.Position = UDim2.new(0.537280679, 0, 0.590946436, 0)
+Stack_2.Size = UDim2.new(0, 200, 0, 61)
+Stack_2.Font = Enum.Font.Oswald
+Stack_2.Text = "Stack Player"
+Stack_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stack_2.TextSize = 30.000
 
-RejoinButton.Name = "RejoinButton"
-RejoinButton.Parent = Mainframe
-RejoinButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-RejoinButton.BackgroundTransparency = 0.450
-RejoinButton.Position = UDim2.new(0.253658533, 0, 0.792207778, 0)
-RejoinButton.Size = UDim2.new(0, 268, 0, 38)
-RejoinButton.Font = Enum.Font.Cartoon
-RejoinButton.Text = "-- Rejoin --"
-RejoinButton.TextColor3 = Color3.fromRGB(61, 61, 61)
-RejoinButton.TextSize = 26.000
-RejoinButton.TextStrokeColor3 = Color3.fromRGB(0, 170, 255)
-RejoinButton.TextStrokeTransparency = 0.000
+UICorner_3.CornerRadius = UDim.new(0, 8989)
+UICorner_3.Parent = Stack_2
 
-PlayerImage.Name = "PlayerImage"
-PlayerImage.Parent = Mainframe
-PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerImage.BackgroundTransparency = 1.000
-PlayerImage.Position = UDim2.new(0.0565046966, 0, 0.172895819, 0)
-PlayerImage.Size = UDim2.new(0, 63, 0, 59)
-PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Title.Name = "Title"
+Title.Parent = StackFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.105263159, 0, 0.0666666701, 0)
+Title.Size = UDim2.new(0, 368, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "STACK GUI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 25.000
+Title.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+Title.TextStrokeTransparency = 0.000
+
+ColourBar.Name = "ColourBar"
+ColourBar.Parent = StackFrame
+ColourBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColourBar.Position = UDim2.new(0.032894738, 0, 0.162962958, 0)
+ColourBar.Size = UDim2.new(0, 430, 0, 11)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(85, 85, 255)), ColorSequenceKeypoint.new(0.88, Color3.fromRGB(152, 219, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 255, 255))}
+UIGradient.Parent = ColourBar
+
+UICorner_4.Parent = ColourBar
+
+SideNote.Name = "SideNote"
+SideNote.Parent = StackFrame
+SideNote.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SideNote.BackgroundTransparency = 1.000
+SideNote.Position = UDim2.new(-0.234649122, 0, 0.86172843, 0)
+SideNote.Size = UDim2.new(0, 417, 0, 83)
+SideNote.Font = Enum.Font.SourceSans
+SideNote.Text = "Esta Gui fue creada por Corey#7787"
+SideNote.TextColor3 = Color3.fromRGB(255, 255, 255)
+SideNote.TextSize = 14.000
+SideNote.TextWrapped = true
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = StackFrame
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.0592105389, 0, 0.215816855, 0)
+PlayerName.Size = UDim2.new(0, 193, 0, 37)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.Text = "Name"
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 22.000
+PlayerName.TextStrokeColor3 = Color3.fromRGB(170, 0, 255)
+PlayerName.TextStrokeTransparency = 0.000
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = StackFrame
+Rejoin.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Rejoin.BackgroundTransparency = 0.500
+Rejoin.Position = UDim2.new(0.561403453, 0, 0.331866205, 0)
+Rejoin.Size = UDim2.new(0, 178, 0, 79)
+Rejoin.Font = Enum.Font.FredokaOne
+Rejoin.Text = "REJOIN"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextSize = 27.000
+
+Close.Name = "Close"
+Close.Parent = StackFrame
+Close.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Close.BackgroundTransparency = 0.900
+Close.Position = UDim2.new(0.883771956, 0, 0, 0)
+Close.Size = UDim2.new(0, 53, 0, 46)
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "-"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 30.000
+
+UICorner_5.Parent = Close
+
+Credits.Name = "Credits"
+Credits.Parent = StackFrame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.521929801, 0, 0.930864215, 0)
+Credits.Size = UDim2.new(0, 218, 0, 28)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "This Gui was made by Corey#7787"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = Stack
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.0131578948, 0, 0.698901117, 0)
+Open.Size = UDim2.new(0, 47, 0, 49)
+Open.Visible = false
+
+openButton.Name = "openButton"
+openButton.Parent = Open
+openButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openButton.Size = UDim2.new(0, 47, 0, 49)
+openButton.Font = Enum.Font.SourceSans
+openButton.Text = ""
+openButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+openButton.TextSize = 14.000
 
 -- Scripts:
 
-local function NDCBU_fake_script() -- Target.LocalScript 
-	local script = Instance.new('LocalScript', Target)
+local function MKLEJPI_fake_script() -- Targetbox.LocalScript 
+	local script = Instance.new('LocalScript', Targetbox)
 
 	Target = script.Parent
 	
@@ -105,88 +195,81 @@ local function NDCBU_fake_script() -- Target.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NDCBU_fake_script)()
-local function MVUJN_fake_script() -- KillButton.LocalScript 
-	local script = Instance.new('LocalScript', KillButton)
+coroutine.wrap(MKLEJPI_fake_script)()
+local function RZAEA_fake_script() -- autoAttack.LocalScript 
+	local script = Instance.new('LocalScript', autoAttack)
 
+	function autoAttack()
+		local args = {
+			[1] = {
+				[1] = "Skill_SpherePunch",
+				[2] = Vector3.new(-367,15735000,-10)
+			}
+		}
+	
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		
+		local args = {
+			[1] = {
+				[1] = "Skill_Punch",
+				[2] = "Right"
+			}
+		}
+	
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+	
+		local args = {
+			[1] = {
+				[1] = "Skill_Punch",
+				[2] = "Left"
+			}
+		}
+	
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	end
+	
+	
 	local button = script.Parent
-	local target = script.Parent.Parent.Target
-	_G.tog2 = true
-	_G.on = 1
-	
-	function Hitbox(target)
-	    local x = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.x--just general position
-        local y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y
-        local z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.z
-	    game:GetService("Workspace")[target.text].Head.Size = Vector3.new(100, 100, 100)
-	    game:GetService("Workspace")[target.text].Head.Position = Vector3.new(x,y,z)
-        game:GetService("Workspace")[target.text].Head.Transparency = 1
-	end
-	
-	function BringBack()
-		wait(2.5)
-		for i, v in pairs(game.Workspace.Storage:GetDescendants()) do-- gets the body velocity 
-			if v.name == "EnergySphere9" then
-				v.BV.Velocity = Vector3.new(0, -2200, 0)--Changes the velocity to make the snowball fire back down
-			end
-		end
-	end
 	
 	button.MouseButton1Click:Connect(function()
-		while _G.tog2 == true do--loop
+		_G.Auto = 1
+		while _G.Auto == 1 do
 			wait()
-			BringBack()-- calls the function to bring the snowballs down
-			Hitbox(Target)--calls the hitbox function
+			autoAttack()
 		end
 	end)
+end
+coroutine.wrap(RZAEA_fake_script)()
+local function QYWN_fake_script() -- Stack_2.LocalScript 
+	local script = Instance.new('LocalScript', Stack_2)
 
-	button.MouseButton2Click:Connect(function()
-		while _G.on == 1 do
+	Target = script.Parent.Parent.Targetbox
 	
-			wait()
-	
-			local args = {
-				[1] = {
-					[1] = "Skill_SpherePunch",
-					[2] = Vector3.new(-367,15735000,-10)
-				}
-			}
-	
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	shared.io = game:GetService('RunService').RenderStepped:Connect(function()
+		local RandomPlayer = game.Players:GetPlayers()[math.random(#game.Players:GetPlayers())]
+		local ts = game:GetService("TweenService")
+		local children = game:GetService("Workspace").Storage:GetChildren()
+		for i, child in ipairs(children) do
+			if child.ClassName == "Part" and isnetworkowner(child) then
+				local num = #child.Parent:GetChildren()
+				if num >= 3 and num <= 1000 then
+					local part = child
+					local ti = TweenInfo.new(0, Enum.EasingStyle.Linear)
+					local tp = {CFrame = game.Players[Target.Text].Character.HumanoidRootPart.CFrame}
+					ts:Create(part, ti, tp):Play()
+					child.Touched:Connect(function()
+						wait()
+						game:GetService("Workspace").Storage:ClearAllChildren()
+					end)
+				end
+			end
 		end
 	end)
-	
-	
 end
-coroutine.wrap(MVUJN_fake_script)()
-local function OROZR_fake_script() -- DestroyGui.LocalScript 
-	local script = Instance.new('LocalScript', DestroyGui)
-
-	Exit = script.Parent
-	a = script.Parent.Parent.Parent
-	
-	Exit.MouseButton1Click:Connect(function()
-		a:Destroy()
-	end)
-end
-coroutine.wrap(OROZR_fake_script)()
-local function UUSTWKP_fake_script() -- RejoinButton.LocalScript 
-	local script = Instance.new('LocalScript', RejoinButton)
-
-	local button2 = script.Parent
-	
-	button2.MouseButton1Click:Connect(function()
-		game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
-	end)
-end
-coroutine.wrap(UUSTWKP_fake_script)()
-local function HANA_fake_script() -- Mainframe.UiFrame 
-	local script = Instance.new('LocalScript', Mainframe)
+coroutine.wrap(QYWN_fake_script)()
+local function NXTYQ_fake_script() -- StackFrame.NameScript 
+	local script = Instance.new('LocalScript', StackFrame)
 
 	local frame = script.Parent
 	
@@ -197,7 +280,63 @@ local function HANA_fake_script() -- Mainframe.UiFrame
 	local thumSize = Enum.ThumbnailSize.Size420x420
 	local content = game.Players:GetUserThumbnailAsync(userId, thumType, thumSize)
 	
-	frame.PlayerImage.Image = content -- change the name of these acording
+	
 	frame.PlayerName.Text = player.Name-- this aswell
 end
-coroutine.wrap(HANA_fake_script)()
+coroutine.wrap(NXTYQ_fake_script)()
+local function TXVD_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		-- rejoin --
+		game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
+	end)
+end
+coroutine.wrap(TXVD_fake_script)()
+local function IMTT_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local button = script.Parent
+	local frame = script.Parent.Parent
+	local frame2 = script.Parent.Parent.Parent.Open
+	
+	button.MouseButton1Click:Connect(function()
+			frame:TweenPosition(
+				UDim2.new(0.273, 0,-0.639, 0),
+				"Out",
+				"Back",
+				2,
+				true
+		)
+		wait(2)
+			frame2.Visible = true
+			frame.Visible =false
+	end)
+	
+end
+coroutine.wrap(IMTT_fake_script)()
+local function GKCHDA_fake_script() -- openButton.LocalScript 
+	local script = Instance.new('LocalScript', openButton)
+
+	local button = script.Parent
+	local frame = script.Parent.Parent
+	local frame2 = script.Parent.Parent.Parent.StackFrame
+	
+	button.MouseButton1Click:Connect(function()
+		if frame2.Visible == false then
+			frame2.Visible = true
+			frame2:TweenPosition(
+				UDim2.new(0.311, 0,0.32, 0),
+				"Out",
+				"Linear",
+				1,
+				true
+				)
+				wait(1)
+			frame.Visible = false
+			
+		end
+	end)
+end
+coroutine.wrap(GKCHDA_fake_script)()
